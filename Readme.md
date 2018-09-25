@@ -1,12 +1,12 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Лобасов](https://up.htmlacademy.ru/adaptive/15/user/581613).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj)
 
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
-
+www
 Полезный файл:
 
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
