@@ -1,0 +1,39 @@
+.about-us {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.about-us__header {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about-us__list {
+  @include list-reset;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.about-us__item {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  width: 180px;
+
+  &--style,
+  &--box {
+    width: 200px;
+  }
+
+  &--like,
+  &--love {
+    width: 210px;
+  }
+
+  &--native {
+    width: 255px;
+  }
+}

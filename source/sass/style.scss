@@ -1,41 +1,33 @@
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensans.woff");
-  src: local("OpenSans"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2");
-  src: local("OpenSans"),
-    url("../fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensansbold.woff");
-  src: local("OpenSans"),
-    url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensansbold.woff2");
-  src: local("OpenSans"),
-    url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: bold;
 }
 
-@import "variables.scss";
-@import "mixin.scss";
-@import "header.scss";
-@import "main-nav.scss";
-@import "navigation-list.scss";
-@import "search-form.scss";
-
-
 body {
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   background-color: #ffffff;
   font-size: 15px;
   line-height: 24px;
@@ -53,3 +45,13 @@ body {
   height: 1px;
   border: 0;
 }
+
+@import "mixin.scss";
+@import "header.scss";
+@import "main-nav.scss";
+@import "navigation-list.scss";
+@import "search-form.scss";
+@import "page-main.scss";
+@import "items.scss";
+@import "week-item.scss";
+@import "about-us.scss";

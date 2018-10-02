@@ -1,0 +1,25 @@
+.page-main {
+  display: block;
+}
+
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-main__head-block {
+  padding-top: 70px;
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.page-main__header {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 260px;
+  margin-bottom: 115px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}

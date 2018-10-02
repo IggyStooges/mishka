@@ -10,18 +10,47 @@
 }
 
 .page-header__basket {
-  width: 190px;
+  box-sizing: border-box;
+  width: 320px;
   padding-top: 30px;
   padding-left: 75px;
-  padding-right: 95px;
+  padding-right: 50px;
   padding-bottom: 30px;
   border-bottom: 1px solid #ececec;
 }
 
 .page-header__logo {
+  @include link-reset;
   display: block;
   width: 86px;
   height: 35px;
   margin: 0 auto;
-  padding-bottom: 22px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.page-header__basket-link {
+  @include link-reset;
+  display: block;
+  width: auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.page-header__menu {
+  display: none;
 }
