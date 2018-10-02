@@ -1,0 +1,12 @@
+.page-header__logo {
+  @include link-reset;
+}
+
+.main-nav__toggle {
+  border: none;
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/icon-menu-open.svg");
+  background-color: #ffffff;
+  font-size: 0;
+}

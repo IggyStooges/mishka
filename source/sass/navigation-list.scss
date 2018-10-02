@@ -1,0 +1,17 @@
+.navigation-list {
+  @include list-reset;
+  border-top: 1px solid #ececec;
+}
+
+.navigation-list__link {
+  @include link-reset;
+}
+
+.navigation-list__item {
+  width: 185px;
+  padding-top: 30px;
+  padding-left: 75px;
+  padding-right: 95px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}

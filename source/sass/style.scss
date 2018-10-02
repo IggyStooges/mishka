@@ -1,1 +1,55 @@
-body { background: red; }
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff");
+  src: local("OpenSans"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff2");
+  src: local("OpenSans"),
+    url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff");
+  src: local("OpenSans"),
+    url("../fonts/opensansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff2");
+  src: local("OpenSans"),
+    url("../fonts/opensansbold.woff2") format("woff2");
+}
+
+@import "variables.scss";
+@import "mixin.scss";
+@import "header.scss";
+@import "main-nav.scss";
+@import "navigation-list.scss";
+@import "search-form.scss";
+
+
+body {
+  font-family: "OpenSans", Arial, sans-serif;
+  background-color: #ffffff;
+  font-size: 15px;
+  line-height: 24px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
