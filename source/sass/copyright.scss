@@ -1,0 +1,26 @@
+.copyright {
+  @include main-padding;
+  padding-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+.copyright__icon-path {
+  fill: #63d1bb;
+}
+
+.copyright__link {
+  font-size: 0;
+
+  &:hover,
+  &:focus {
+    .copyright__icon-path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .copyright__icon-path {
+      opacity: 0.3;
+    }
+  }
+}
