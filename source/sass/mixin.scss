@@ -4,7 +4,64 @@
   padding: 0;
 }
 
+@mixin main-padding {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin bottom-line {
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: cover;
+  }
+}
+
 @mixin link-reset {
   text-decoration: none;
   color: #000000;
+}
+
+@mixin button-reset {
+  border: none;
+  background: none;
+}
+
+@mixin styleguide-btn {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin user-btn {
+  @include link-reset;
+  display: block;
+  padding: 14px 83px;
+  border: 2px solid #444444;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    border: none;
+    padding: 16px 83px;
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

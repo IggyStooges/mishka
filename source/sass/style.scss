@@ -27,12 +27,12 @@
 }
 
 body {
+  min-width: 320px;
+  margin: 0 auto;
   font-family: "OpenSans", "Arial", sans-serif;
   background-color: #ffffff;
   font-size: 15px;
   line-height: 24px;
-  min-width: 320px;
-  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -55,3 +55,5 @@ body {
 @import "items.scss";
 @import "week-item.scss";
 @import "about-us.scss";
+@import "comments.scss";
+@import "contacts.scss";

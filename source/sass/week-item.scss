@@ -1,19 +1,9 @@
 .week-item {
+  @include bottom-line;
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 36px;
-
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-    width: 320px;
-    height: 6px;
-    background-image: url(../img/bg-zigzag-line.svg);
-    background-size: cover;
-  }
 }
 
 .week-item__name {
@@ -68,12 +58,5 @@
 }
 
 .week-item__btn {
-  @include link-reset;
-  display: block;
-  padding: 14px 83px;
-  border: 2px solid #444444;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+  @include user-btn;
 }

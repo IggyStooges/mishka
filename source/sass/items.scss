@@ -7,9 +7,8 @@ $btn-padding-top: 30px;
 }
 
 .items__item {
+  @include main-padding;
   width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
 
   &--interior {
     background-color: #63d1bb;
@@ -34,7 +33,7 @@ $btn-padding-top: 30px;
   color: #ffffff;
 
   &:hover {
-    padding-top: ($btn-padding-top)-5px;
+    padding-top: $btn-padding-top - 5px;
   }
 
   &:active,

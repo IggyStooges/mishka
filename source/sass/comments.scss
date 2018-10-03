@@ -1,0 +1,42 @@
+.comments {
+  @include bottom-line;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 36px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.comments__header {
+  margin: 0;
+}
+
+.comments__items {
+  padding: 0;
+  margin: 0;
+  width: 260px;
+  font-size: 17px;
+}
+
+.comments__author-link {
+  @include link-reset;
+}
+
+.comments__slider-toggles {
+  display: flex;
+}
+
+.comments__button {
+  @include button-reset;
+  @include styleguide-btn;
+  font-size: 0;
+  border: 1px solid #ececec;
+  width: 130px;
+  height: 50px;
+  background-color: #000000;
+}
+
+.comments__write-btn {
+  @include user-btn;
+}
