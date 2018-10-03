@@ -54,62 +54,64 @@
     </div>
   </header>
   <main class="catalog-main">
-    <h1 class="catalog-main__header">
-      Каталог товаров
-    </h1>
-    <section class="catalog">
-      <h2 class="visually-hidden">Список товаров</h2>
-      <ul classs="catalog__list">
-        <li class="catalog__item item">
-          <img class="item__image" src="http://placehold.it/150x100" width="260" height="195" alt="rabbit">
-          <h3 class="item__title">
-            Зайчик-попрыгайчик
-          </h3>
-          <p class="item__description">
-            Рост 30 см, вес 200 г
+    <div class="catalog-main__wrapper">
+      <h1 class="catalog-main__header">
+        Каталог товаров
+      </h1>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog__item--hare">
+            <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="rabbit">
+            <h3 class="catalog__item-title">
+              Зайчик-попрыгайчик
+            </h3>
+            <p class="catalog__item-description">
+              Рост 30 см, вес 200 г
+            </p>
+            <div class="catalog__item-price">
+              1 200 руб.
+            </div>
+          </li>
+          <li class="catalog__item catalog__item--bowl">
+            <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="rabbit">
+            <h3 class="catalog__item-title">
+              Корзинка для белья
+            </h3>
+            <p class="catalog__item-description">
+              Диаметр 15 см, высота 10 см </p>
+            <div class="catalog__item-price">
+              690 руб.
+            </div>
+          </li>
+          <li class="catalog__item catalog__item--toys">
+            <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="rabbit">
+            <h3 class="catalog__item-title">
+              Большая корзинка
+              для игрушек </h3>
+            <p class="catalog__item-description">
+              Диаметр 30 см, высота 30 см </p>
+            <div class="catalog__item-price">
+              1 500 руб.
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="manufacturing">
+        <h2 class="manufacturing__headet">
+          Процесс производства
+        </h2>
+        <div class="manufacturing__video">
+          <img class="manufacturing__image" src="http://placehold.it/150x100" width="260" height="150" alt="rabbit">
+          <p class="manufacturing__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
-          <div class="item__price">
-            1 200 руб.
-          </div>
-        </li>
-        <li class="catalog__item item">
-          <img class="item__image" src="http://placehold.it/150x100" width="260" height="195" alt="rabbit">
-          <h3 class="item__title">
-            Корзинка для белья
-          </h3>
-          <p class="item__description">
-            Диаметр 15 см, высота 10 см </p>
-          <div class="item__price">
-            690 руб.
-          </div>
-        </li>
-        <li class="catalog__item item">
-          <img class="item__image" src="http://placehold.it/150x100" width="260" height="195" alt="rabbit">
-          <h3 class="item__title">
-            Большая корзинка
-            для игрушек </h3>
-          <p class="item__description">
-            Диаметр 30 см, высота 30 см </p>
-          <div class="item__price">
-            1 500 руб.
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="manufacturing">
-      <h2 class="manufacturing__headet">
-        Процесс производства
-      </h2>
-      <div class="manufacturing__video">
-        <img class="manufacturing__image" src="http://placehold.it/150x100" width="260" height="150" alt="rabbit">
-        <p class="manufacturing__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="manufacturing__order-btn" href="form.html">
-          сделать заказ
-        </a>
-      </div>
-    </section>
+          <a class="manufacturing__order-btn" href="form.html">
+            сделать заказ
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
