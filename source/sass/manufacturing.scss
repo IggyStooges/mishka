@@ -1,0 +1,32 @@
+.manufacturing {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.manufacturing__header {
+  margin-left: 28px;
+  padding-left: 60px;
+  font-size: 17px;
+}
+
+.manufacturing__play-btn {
+  @include button-reset;
+}
+
+.manufacturing__description {
+  width: 185px;
+  margin-left: 28px;
+  font-size: 13px;
+}
+
+.manufacturing__order-btn {
+  @include link-reset;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 192px;
+  padding: 16px 25px;
+  border: 2px solid #444444;
+  font-weight: bold;
+  text-transform: uppercase;
+}
