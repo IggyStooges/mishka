@@ -6,30 +6,52 @@
 .form__fieldset {
   padding: 0;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 25px;
+  padding-top: 25px;
   border: none;
   border-top: 1px solid #62d1ba;
+
+  &--contact {
+    padding-top: 8px;
+  }
 }
 
 .form__legend {
-  margin-left: -5px;
-  padding-right: 20px;
+  margin-left: -2px;
+  padding-right: 29px;
   font-size: 16px;
   line-height: 17px;
+  font-weight: bold;
   color: #62d1ba;
+}
+
+.form__item {
+  margin: 0;
+  padding: 0;
 }
 
 .form__label {
   position: relative;
   display: inline-block;
-  width: 150px;
+  width: 200px;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
 
-  &--checkbox,
+  &--checkbox {
+    padding-left: 60px;
+    padding-top: 10px;
+    margin-bottom: 33px;
+  }
+
+  &--last-checkbox {
+    margin-bottom: 18px;
+  }
+
   &--radio {
     padding-left: 60px;
+    padding-top: 10px;
+    margin-bottom: 15px;
   }
 
   &--radio::before {
@@ -101,20 +123,30 @@
   width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-bottom: 18px;
   border: none;
   border-bottom: 2px solid black;
   font-size: 17px;
   line-height: 18px;
+
+  &--last {
+    margin-bottom: 5px;
+  }
+
+  &--contact {
+    margin-bottom: 7px;
+  }
 }
 
 
 .form__textarea {
   width: 185px;
+  height: 105px;
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
   padding-right: 56px;
-  margin-top: 10px;
+  margin-bottom: 5px;
   border: 2px solid black;
   font-size: 17px;
   line-height: 18px;
@@ -130,6 +162,7 @@
   @include button-reset;
   width: 260px;
   padding: 16px 44px;
+  margin-top: 30px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;

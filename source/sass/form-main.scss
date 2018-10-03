@@ -6,6 +6,7 @@
 .form-main__header {
   width: 260px;
   padding: 73px 30px;
+  margin: 0;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -13,6 +14,10 @@
 }
 
 .form-main__description {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin-bottom: 15px;
   width: 260px;
   font-size: 13px;
   line-height: 24px;

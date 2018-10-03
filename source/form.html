@@ -120,7 +120,7 @@
           </p>
           <p class="form__item">
             <input class="form__checkbox visually-hidden" type="checkbox" id="orange" name="orange">
-            <label for="orange" class="form__label form__label--checkbox">
+            <label for="orange" class="form__label form__label--checkbox form__label--last-checkbox">
               Оранжевый
             </label>
           </p>
@@ -146,27 +146,29 @@
             <label for="patronymic" class="form__label">
               Отчество:
             </label>
-            <input class="form__text-input" type="text" id="patronymic" placeholder="Отчество, если желаете" name="patronymic">
+            <input class="form__text-input form__text-input--last" type="text" id="patronymic" placeholder="Отчество, если желаете"
+              name="patronymic">
           </p>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--contact">
           <legend class="form__legend">
             ТЕЛ
           </legend>
-          <input class="form__text-input" type="tel" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone"
-            required>
+          <input class="form__text-input form__text-input--contact" type="tel" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+            name="telephone" required>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--contact">
           <legend class="form__legend">
-            E-mail
+            E-MAIL
           </legend>
-          <input class="form__text-input" type="email" id="e-mail" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="e-mail">
+          <input class="form__text-input form__text-input--contact" type="email" id="e-mail" placeholder="Ваш Email*"
+            name="e-mail">
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">
             ДОП
           </legend>
-          <textarea class="form__textarea" cols="30" rows="9" placeholder="Опишите все ваши пожелания к заказу" name="wish">
+          <textarea class="form__textarea" cols="20" rows="9" placeholder="Опишите все ваши пожелания к заказу" name="wish">
           </textarea>
           <small class="form__footnote">
             *Поля обязательны для заполнения
