@@ -27,6 +27,7 @@
 }
 
 body {
+  position: relative;
   min-width: 320px;
   margin: 0 auto;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -60,3 +61,4 @@ body {
 @import "page-footer.scss";
 @import "social-list.scss";
 @import "copyright.scss";
+@import "modal-window.scss";

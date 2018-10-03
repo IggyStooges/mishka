@@ -1,0 +1,64 @@
+.modal-window {
+  width: 320px;
+  border-top: 1px solid #c7c7c7;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.modal-window__header {
+  @include main-padding;
+  width: 150px;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.modal-window__tip {
+  @include main-padding;
+  width: 150px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.modal-window__form {
+  @include main-padding;
+}
+
+.modal-window__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.modal-window__label {
+  display: block;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  padding: 16px 32px;
+  border: 2px solid #ececec;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.modal-window__radio {
+  &:checked {
+    ~.modal-window__label {
+      border: 2px solid #63d1bb;
+    }
+  }
+}
+
+.modal-window__btn {
+  @include button-reset;
+  width: 260px;
+  padding: 18px 80px;
+  background-color: #63d1bb;
+  border: none;
+  font-size: 17px;
+  line-height: 16px;
+  color:#ffffff;
+}

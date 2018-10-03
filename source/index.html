@@ -265,21 +265,21 @@
       Выберите размер
     </p>
     <form class="modal-window__form" method="POST" action="https://echo.htmlacademy.ru">
-      <ul class="modal-window__list size-list">
-        <li>
-          <input type="radio" class="modal-window__radio" id="small">
+      <ul class="modal-window__list">
+        <li class="modal-window__list-item">
+          <input type="radio" class="modal-window__radio visually-hidden" id="small" value="small" name="size" checked>
           <label for="small" class="modal-window__label">S</label>
         </li>
-        <li>
-          <input type="radio" class="modal-window__radio" id="medium">
-          <label for="medium" class="modal-window__label">M</label>
+        <li class="modal-window__list-item">
+          <input type="radio" class="modal-window__radio visually-hidden" id="medium" value="medium" name="size">
+          <label for="medium" class="modal-window__label ">M</label>
         </li>
-        <li>
-          <input type="radio" class="modal-window__radio" id="large">
+        <li class="modal-window__list-item">
+          <input type="radio" class="modal-window__radio visually-hidden" id="large" value="large" name="size">
           <label for="large" class="modal-window__label">L</label>
         </li>
       </ul>
-      <button type="submit" class="modal-window__btn">Добавить в корзину</button>
+      <button type="submit" class="modal-window__btn">Добавить</button>
     </form>
   </section>
 </body>
