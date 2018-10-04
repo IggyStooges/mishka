@@ -1,0 +1,44 @@
+$btn-height: 108px;
+$btn-padding-top: 30px;
+
+.items__list {
+  @include list-reset;
+  font-size: 19px;
+}
+
+.items__item {
+  @include main-padding;
+  width: auto;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+
+  &:hover {
+    height: $btn-height+5px;
+  }
+}
+
+.items__link-btn {
+  @include link-reset;
+  display: block;
+  width: 130px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-right: 130px;
+  color: #ffffff;
+  font-weight: bold;
+
+  &:hover {
+    padding-top: $btn-padding-top - 5px;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}

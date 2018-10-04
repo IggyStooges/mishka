@@ -1,0 +1,70 @@
+.week-item {
+  @include bottom-line;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+.week-item__name {
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 5px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.week-item__header {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.week-item__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  padding-top: 17px;
+  font-style: normal;
+}
+
+.week-item__table {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  border-collapse: collapse;
+  line-height: 20px;
+}
+
+.week-item__table-row {
+  border-bottom: 1px solid #ececec;
+}
+
+.week-item__table-data {
+  padding-top: 7px;
+  padding-bottom: 12px;
+
+  &--value {
+    padding-left: 15px;
+  }
+}
+
+.week-item__price {
+  text-align: center;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 27px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.week-item__btn {
+  @include user-btn;
+}

@@ -1,0 +1,27 @@
+.navigation-list {
+  @include list-reset;
+  border-top: 1px solid #ececec;
+}
+
+.navigation-list__link {
+  @include link-reset;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.navigation-list__item {
+  box-sizing: border-box;
+  width: 320px;
+  padding-top: 27px;
+  padding-left: 75px;
+  padding-right: 50px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #ececec;
+}

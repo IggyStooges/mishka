@@ -1,0 +1,53 @@
+.manufacturing {
+  @include main-padding;
+  margin-top: 30px;
+}
+
+.manufacturing__wrapper {
+  padding-bottom: 30px;
+}
+
+.manufacturing__header {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  margin-top: 25px;
+  margin-bottom: 23px;
+  padding-left: 60px;
+  font-size: 17px;
+}
+
+.manufacturing__video {
+  position: relative;
+}
+
+.manufacturing__play-btn {
+  @include button-reset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.manufacturing__description {
+  width: 185px;
+  margin: 0;
+  margin-left: 32px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.manufacturing__order-btn {
+  @include link-reset;
+  display: block;
+  margin: 0 auto;
+  margin-top: 26px;
+  box-sizing: border-box;
+  width: 192px;
+  padding: 16px 23px;
+  border: 2px solid #444444;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,53 @@
+.contacts {
+  line-height: 30px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+}
+
+.contacts__header {
+  @include main-padding;
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 18px;
+}
+
+.contacts__wrapper {
+  @include main-padding;
+}
+
+.contacts__item {
+  display: flex;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contacts__email {
+  margin-left: auto;
+}
+
+.contacts__adress {
+  margin-left: 35px;
+  width: 150px;
+  text-align: left;
+}
+
+.contacts__feeback {
+  @include main-padding;
+}
+
+.contacts__map {
+  width: 322px;
+  height: 457px;
+  margin-bottom: 40px;
+}
+
+.contacts__write-us-btn {
+  @include user-btn;
+  padding: 14px 50px;
+
+  &:hover,
+  &:focus {
+    border: none;
+    padding: 16px 50px;
+  }
+}

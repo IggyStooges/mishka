@@ -1,0 +1,46 @@
+.catalog__list {
+  @include list-reset;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.catalog__item {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  border: 1px solid #ededed;
+
+
+  &--hare {
+    padding-top: 0;
+  }
+
+  &--hare,
+  &--bowl {
+    border-bottom: none;
+  }
+}
+
+.catalog__item-title {
+  padding: 0 28px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.catalog__item-description {
+  margin: 0 28px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__item-price {
+  margin: 0 28px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
