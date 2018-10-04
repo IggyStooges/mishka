@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 30px;
+  padding-top: 28px;
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -19,16 +19,16 @@
 }
 
 .about-us__item {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding-top: 61px;
+  padding-bottom: 22px;
   width: 180px;
 
+  &--like,
   &--style,
   &--box {
     width: 200px;
   }
 
-  &--like,
   &--love {
     width: 210px;
   }

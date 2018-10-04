@@ -3,28 +3,45 @@
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 36px;
-  font-size: 25px;
-  line-height: 30px;
+  padding-bottom: 51px;
+  padding-top: 33px;
 }
 
 .comments__header {
   margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.comments__list {
+  padding-top: 25px;
 }
 
 .comments__items {
   padding: 0;
   margin: 0;
   width: 260px;
-  font-size: 17px;
+}
+
+.comments__text {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 .comments__author-link {
   @include link-reset;
+  display: block;
+  margin-top: 5px;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .comments__slider-toggles {
   display: flex;
+  margin-top: 28px;
+  margin-bottom: 40px;
 }
 
 .comments__button {
@@ -39,4 +56,11 @@
 
 .comments__write-btn {
   @include user-btn;
+}
+
+.comments__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: bold;
 }

@@ -27,10 +27,11 @@ $btn-padding-top: 30px;
   @include link-reset;
   display: block;
   width: 130px;
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 30px;
   padding-right: 130px;
   color: #ffffff;
+  font-weight: bold;
 
   &:hover {
     padding-top: $btn-padding-top - 5px;

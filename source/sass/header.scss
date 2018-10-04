@@ -1,7 +1,6 @@
 .page-header {
   font-size: 17px;
   font-weight: bold;
-  padding-top: 20px;
 }
 
 .page-header__wrapper {
@@ -9,13 +8,31 @@
   margin: 0 auto;
 }
 
+.page-header__container {
+  @include main-padding;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-header__open-menu-btn {
+  border: none;
+  width: 20px;
+  margin-left: auto;
+  height: 14px;
+  background-image: url("../img/icon-menu-open.svg");
+  font-size: 0;
+  cursor: pointer;
+}
+
 .page-header__basket {
   box-sizing: border-box;
   width: 320px;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: 75px;
   padding-right: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -24,7 +41,7 @@
   display: block;
   width: 86px;
   height: 35px;
-  margin: 0 auto;
+  margin-left: 85px;
 
   &:hover {
     opacity: 0.6;
@@ -53,4 +70,5 @@
 /*
 .page-header__menu {
   display: none;
-} */
+}
+ */

@@ -1,9 +1,13 @@
 .contacts {
   line-height: 30px;
+  padding-top: 35px;
+  padding-bottom: 40px;
 }
 
 .contacts__header {
   @include main-padding;
+  margin: 0;
+  margin-bottom: 27px;
   font-size: 18px;
 }
 
@@ -13,6 +17,8 @@
 
 .contacts__item {
   display: flex;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .contacts__email {
@@ -27,6 +33,12 @@
 
 .contacts__feeback {
   @include main-padding;
+}
+
+.contacts__map {
+  width: 322px;
+  height: 457px;
+  margin-bottom: 40px;
 }
 
 .contacts__write-us-btn {
