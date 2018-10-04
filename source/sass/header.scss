@@ -22,6 +22,7 @@
   margin-left: auto;
   height: 14px;
   background-image: url("../img/icon-menu-open.svg");
+  background-color: transparent;
   font-size: 0;
   cursor: pointer;
 }
@@ -67,6 +68,7 @@
     opacity: 0.3;
   }
 }
+
 /*
 .page-header__menu {
   display: none;
