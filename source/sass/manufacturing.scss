@@ -1,10 +1,8 @@
 .manufacturing {
   @include main-padding;
   margin-top: 30px;
-}
-
-.manufacturing__wrapper {
   padding-bottom: 30px;
+
 }
 
 .manufacturing__header {
@@ -50,4 +48,63 @@
   line-height: 16px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+
+@media (min-width: 768px) {
+  .manufacturing__image {
+    width: 668px;
+    height: 455px;
+  }
+
+  .manufacturing__video {
+    order: 0;
+    width: 668px;
+    height: 455px;
+  }
+
+  .manufacturing__description {
+    order: 1;
+    padding-left: 40px;
+    padding-right: 125px;
+    width: auto;
+  }
+
+  .manufacturing__header {
+    order: 1;
+  }
+
+  .manufacturing__order-btn {
+    width: auto;
+    margin: 0 40px;
+    padding-left: 220px;
+    order: 1;
+  }
+
+  .manufacturing {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .manufacturing {
+    height: 455px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .manufacturing__order-btn {
+    width: 220px;
+    padding-left: 20px;
+  }
+
+  .manufacturing__description {
+    order: 1;
+    padding-left: 40px;
+    padding-right: 25px;
+    width: 220px;
+  }
 }
