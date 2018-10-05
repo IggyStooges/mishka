@@ -10,10 +10,7 @@
 
 .page-header__container {
   @include main-padding;
-  display: flex;
-  align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .page-header__open-menu-btn {
@@ -27,22 +24,15 @@
   cursor: pointer;
 }
 
-.page-header__basket {
-  box-sizing: border-box;
-  width: 320px;
-  padding-top: 27px;
-  padding-left: 75px;
-  padding-right: 50px;
-  padding-bottom: 27px;
-  border-bottom: 1px solid #ececec;
-}
-
 .page-header__logo {
   @include link-reset;
   display: block;
+  box-sizing: border-box;
   width: 86px;
   height: 35px;
   margin-left: 85px;
+  font-size: 0;
+  background-image: url("../img/logo-mobile.svg");
 
   &:hover {
     opacity: 0.6;
@@ -58,6 +48,12 @@
   @include link-reset;
   display: block;
   width: auto;
+  box-sizing: border-box;
+  width: 320px;
+  padding-top: 27px;
+  padding-left: 75px;
+  padding-right: 50px;
+  padding-bottom: 27px;
 
   &:hover {
     opacity: 0.6;
@@ -69,8 +65,70 @@
   }
 }
 
-/*
-.page-header__menu {
+.page-header__delivery {
   display: none;
 }
- */
+
+@media (min-width: 768px) {
+  .page-header__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .page-header__container {
+    @include tablet-padding;
+    position: relative;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50px;
+      top: 87px;
+      height: 1px;
+      width: 100%;
+      background-color: black;
+    }
+  }
+
+  .page-header__logo {
+    margin: 0;
+    width: 113px;
+    height: 46px;
+    background-image: url("../img/logo-tablet.svg");
+    margin-right: 210px;
+  }
+
+  .page-header__open-menu-btn {
+    display: none;
+  }
+
+  .page-header__menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__basket-link {
+    padding-right: 0;
+    width: 264px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .page-header__delivery {
+    display: block;
+    order: 3;
+    width: 235px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
+  }
+}

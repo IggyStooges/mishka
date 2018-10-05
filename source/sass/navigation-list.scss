@@ -1,5 +1,7 @@
 .navigation-list {
   @include list-reset;
+  box-sizing: border-box;
+  width: 320px;
   border-top: 1px solid #ececec;
 }
 
@@ -24,4 +26,20 @@
   padding-right: 50px;
   padding-bottom: 27px;
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .navigation-list {
+    @include list-reset;
+    display: flex;
+    width: auto;
+    border: none;
+  }
+
+  .navigation-list__item {
+    padding-left: 0;
+    width: 167px;
+    border: none;
+    padding-right: 0;
+  }
 }

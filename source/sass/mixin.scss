@@ -9,6 +9,11 @@
   padding-right: 30px;
 }
 
+@mixin tablet-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 @mixin bottom-line {
   &::after {
     position: absolute;
@@ -33,6 +38,7 @@
 }
 
 @mixin styleguide-btn {
+
   &:hover,
   &:focus {
     opacity: 0.6;
