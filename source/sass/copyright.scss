@@ -1,7 +1,6 @@
 .copyright {
-  @include main-padding;
   padding-bottom: 20px;
-  background-color: #f1f1f1;
+  @include main-padding;
 }
 
 .copyright__icon-path {
