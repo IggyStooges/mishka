@@ -37,3 +37,11 @@
     width: 255px;
   }
 }
+
+@media (min-width: 768px) {
+  .about-us__list {
+    display: flex;
+  }
+}
+
+@media (min-width: 1150px) {}

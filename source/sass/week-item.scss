@@ -68,3 +68,63 @@
 .week-item__btn {
   @include user-btn;
 }
+
+@media (min-width: 768px) {
+  .week-item__head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .week-item__img {
+    width: 333px;
+    height: 404px;
+    margin-left: auto;
+  }
+
+  .week-item__container {
+    padding-top: 55px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .week-item__table {
+    width: 290px;
+  }
+
+  .week-item__description {
+    width: 290px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .week-item__head-container {
+    position: relative;
+    width: 700px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    z-index: 20;
+  }
+
+  .week-item__img {
+    width: 333px;
+    height: 404px;
+    margin-left: auto;
+  }
+
+  .week-item__container {
+    padding-top: 55px;
+    height: 636px;
+  }
+
+  .week-item__table {
+    width: 290px;
+  }
+
+  .week-item__description {
+    width: 290px;
+    padding-top: 160px;
+  }
+}
