@@ -15,10 +15,10 @@
 }
 
 .page-main__header {
+  @include main-padding;
   width: 260px;
   margin: 0;
   padding: 0;
-  @include main-padding;
   margin-bottom: 121px;
   font-size: 27px;
   line-height: 30px;
@@ -41,8 +41,8 @@
   }
 
   .page-main__header {
-    width: 500px;
     @include tablet-padding;
+    width: 500px;
     margin: 0 auto;
     margin-bottom: 370px;
     font-size: 43px;

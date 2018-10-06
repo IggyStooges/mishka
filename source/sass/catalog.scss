@@ -46,8 +46,6 @@
   border-top: 1px solid #ededed;
 }
 
-
-
 @media (min-width: 768px) {
   .catalog__list {
     @include tablet-padding;
@@ -78,7 +76,6 @@
   .catalog__item-price {
     margin-top: 180px;
   }
-
 }
 
 @media (min-width: 1150px) {

@@ -13,7 +13,7 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
-  align-items: center
+  align-items: center;
 }
 
 .page-header__open-menu-btn {
@@ -50,9 +50,8 @@
 .page-header__basket {
   @include link-reset;
   display: block;
-  width: auto;
-  box-sizing: border-box;
   width: 320px;
+  box-sizing: border-box;
   padding-top: 27px;
   padding-left: 75px;
   padding-right: 50px;
@@ -144,7 +143,7 @@
     order: 1;
     width: 149px;
     height: 72px;
-    background-image: url("../img/logo-desktop.svg")
+    background-image: url("../img/logo-desktop.svg");
   }
 
   .page-header__basket {
