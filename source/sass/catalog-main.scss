@@ -18,7 +18,8 @@
 
 @media (min-width: 768px) {
   .catalog-main {
-    margin-top: -100px;
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
+    margin-top: -20px;
   }
 
   .catalog-main__wrapper {
@@ -36,10 +37,6 @@
 }
 
 @media (min-width: 1150px) {
-  .catalog-main {
-    margin-top: -100px;
-  }
-
   .catalog-main__wrapper {
     width: 1150px;
     margin: 0 auto;

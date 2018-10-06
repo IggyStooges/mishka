@@ -1,7 +1,6 @@
 .about-us {
   padding-top: 28px;
-  padding-right: 30px;
-  padding-left: 30px;
+  @include main-padding;
 }
 
 .about-us__header {
@@ -39,9 +38,28 @@
 }
 
 @media (min-width: 768px) {
+  .about-us {
+    @include tablet-padding;
+  }
+
   .about-us__list {
     display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .about-us__item {
+    width: 50%;
   }
 }
 
-@media (min-width: 1150px) {}
+@media (min-width: 1150px) {
+  .about-us {
+    @include tablet-padding;
+    padding-left: 225px;
+  }
+
+  .about-us__list {
+    width: 700px;
+  }
+}

@@ -14,12 +14,45 @@
 }
 
 .form-main__description {
-  padding-right: 30px;
-  padding-left: 30px;
+  @include main-padding;
   padding-top: 10px;
   margin-bottom: 15px;
   width: 260px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+  .form-main {
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
+    margin-top: -20px;
+  }
+
+  .form-main__wrapper {
+    width: 768px;
+  }
+
+  .form-main__header {
+    @include tablet-padding;
+    width: 668px;
+    padding-top: 100px;
+    margin-bottom: 60px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .form-main__description {
+    @include tablet-padding;
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .form-main__wrapper {
+    width: 1150px;
+  }
 }
