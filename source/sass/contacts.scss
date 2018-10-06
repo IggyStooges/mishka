@@ -1,5 +1,6 @@
 .contacts {
   line-height: 30px;
+  position: relative;
   padding-top: 35px;
   padding-bottom: 40px;
 }
@@ -12,7 +13,8 @@
 }
 
 .contacts__wrapper {
-  @include main-padding;
+  @include tablet-padding;
+  margin-bottom: 530px;
 }
 
 .contacts__item {
@@ -36,9 +38,12 @@
 }
 
 .contacts__map {
+  position: absolute;
+  bottom: 130px;
   width: 322px;
   height: 457px;
-  margin-bottom: 40px;
+  background-image: url(../img/map-mobile@1x.jpg);
+  background-repeat: no-repeat;
 }
 
 .contacts__write-us-btn {
@@ -49,5 +54,39 @@
   &:focus {
     border: none;
     padding: 16px 50px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .contacts__map {
+    bottom: 130px;
+    width: 768px;
+    height: 457px;
+    background-image: url(../img/map-tablet@1x.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1150px) {
+
+  .contacts {
+    display: flex;
+  }
+
+  .contacts__map {
+    position: static;
+    margin-left: auto;
+    bottom: 130px;
+    width: 525px;
+    height: 457px;
+    background-image: url(../img/map-desktop@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .contacts__wrapper {
+    padding: 0;
+    padding-left: 175px;
+    margin-bottom: 80px;
   }
 }

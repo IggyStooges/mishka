@@ -26,13 +26,17 @@
 }
 
 @media (min-width: 768px) {
+  .page-main {
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
+    margin-top: -20px;
+  }
+
   .page-main__wrapper {
     width: 768px;
   }
 
   .page-main__head-block {
     background-image: url("../img/hero-desktop@1x.jpg");
-    margin-top: -20px;
     padding-top: 160px;
   }
 
@@ -48,7 +52,7 @@
 
 @media (min-width: 1150px) {
   .page-main__wrapper {
-    width: 768px;
+    width: 1150px;
   }
 
   .page-main__header {
