@@ -19,6 +19,7 @@
 }
 
 .navigation-list__item {
+  @include main-padding;
   box-sizing: border-box;
   width: 320px;
   padding-top: 27px;
@@ -30,10 +31,10 @@
 
 @media (min-width: 768px) {
   .navigation-list {
-    @include list-reset;
     display: flex;
     width: auto;
     border: none;
+    font-size: 15px;
   }
 
   .navigation-list__item {
@@ -41,5 +42,12 @@
     width: 167px;
     border: none;
     padding-right: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navigation-list {
+    font-size: 17px;
   }
 }
