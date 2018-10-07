@@ -8,7 +8,7 @@ $btn-padding-top: 30px;
 
 .items__item {
   @include main-padding;
-  width: auto;
+  width: 260px;
 
   &--interior {
     background-color: #63d1bb;
@@ -43,7 +43,7 @@ $btn-padding-top: 30px;
   }
 }
 
-
+/*
 @media (min-width: 768px) {
   .items__list {
     display: flex;
@@ -60,3 +60,4 @@ $btn-padding-top: 30px;
     padding-right: 370px;
   }
 }
+ */

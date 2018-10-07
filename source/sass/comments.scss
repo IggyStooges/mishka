@@ -56,7 +56,7 @@
 
 .comments__write-btn {
   @include user-btn;
-  width: 86px;
+  width: 90px;
 }
 
 .comments__author-name {
@@ -65,7 +65,7 @@
   font-style: normal;
   font-weight: bold;
 }
-
+/*
 @media (min-width: 768px) {
   .comments {
     width: 768px;
@@ -112,3 +112,4 @@
     padding-left: 225px;
   }
 }
+ */

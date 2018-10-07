@@ -1,4 +1,5 @@
 .contacts {
+  @include main-padding;
   line-height: 30px;
   position: relative;
   padding-top: 35px;
@@ -6,21 +7,19 @@
 }
 
 .contacts__header {
-  @include main-padding;
   margin: 0;
   margin-bottom: 27px;
   font-size: 18px;
 }
 
 .contacts__wrapper {
-  @include tablet-padding;
   margin-bottom: 530px;
 }
 
 .contacts__item {
   display: flex;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .contacts__email {
@@ -33,13 +32,10 @@
   text-align: left;
 }
 
-.contacts__feeback {
-  @include main-padding;
-}
-
 .contacts__map {
   position: absolute;
   bottom: 130px;
+  left: 0;
   width: 322px;
   height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
@@ -48,7 +44,9 @@
 
 .contacts__write-us-btn {
   @include user-btn;
-  padding: 14px 50px;
+  @include tablet-padding;
+  box-sizing: border-box;
+  width: 260px;
 
   &:hover,
   &:focus {
@@ -57,6 +55,7 @@
   }
 }
 
+/*
 @media (min-width: 768px) {
   .contacts__map {
     bottom: 130px;
@@ -89,3 +88,4 @@
     margin-bottom: 80px;
   }
 }
+ */
