@@ -50,16 +50,20 @@
   }
 }
 
-/* @media (min-width: 1150px) {
+@media (min-width: 1150px) {
+  .page-main {
+    margin-top: -47px;
+  }
+
   .page-main__wrapper {
     width: 1150px;
   }
 
   .page-main__header {
-    width: 610px;
+    margin: 0 auto;
+    margin-bottom: 360px;
+    width: 650px;
     font-size: 53px;
     line-height: 57px;
   }
 }
-
- */

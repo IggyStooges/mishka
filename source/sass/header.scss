@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 2;
   font-size: 17px;
   font-weight: bold;
 }
@@ -144,7 +146,7 @@
     text-align: right;
   }
 }
-/*
+
 @media (min-width: 1150px) {
   .page-header__wrapper {
     width: 1150px;
@@ -187,4 +189,3 @@
     top: 9px;
   }
 }
- */
