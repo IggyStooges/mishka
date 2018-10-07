@@ -88,15 +88,28 @@
   }
 }
 
-/*
 @media (min-width: 1150px) {
   .about-us {
     @include tablet-padding;
     padding-left: 225px;
+    padding-bottom: 85px;
+  }
+
+  .about-us__header {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 0;
+    font-size: 53px;
+    line-height: 57px;
   }
 
   .about-us__list {
     width: 700px;
   }
+
+
+  .about-us__item {
+    padding-top: 105px;
+    padding-bottom: 5px;
+  }
 }
- */

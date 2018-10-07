@@ -22,3 +22,17 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    @include tablet-padding;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}/*

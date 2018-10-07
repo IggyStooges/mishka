@@ -23,3 +23,15 @@
     }
   }
 }
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+@media (min-width: 768px) {
+  .copyright__text {
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
