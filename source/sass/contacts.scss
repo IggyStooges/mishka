@@ -55,17 +55,62 @@
   }
 }
 
-/*
 @media (min-width: 768px) {
+  .contacts {
+    padding: 0;
+    padding-top: 90px;
+  }
+
+  .contacts__container {
+    @include tablet-padding;
+    width: 668px;
+  }
+
+  .contacts__header {
+    margin-bottom: 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .contacts__map {
-    bottom: 130px;
+    bottom: 110px;
     width: 768px;
     height: 457px;
     background-image: url("../img/map-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
+
+  .contacts__write-us-btn {
+    width: 230px;
+    padding-left: 40px;
+    padding-right: 35px;
+    margin: 0 auto;
+  }
+
+  .contacts__wrapper {
+    width: 668px;
+    display: flex;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 540px;
+
+  }
+
+  .contacts__item {
+    width: 50%;
+  }
+
+  .contacts__email {
+    margin-left: 25px;
+  }
+
+  .contacts__adress {
+    width: 225px;
+    margin-left: 25px;
+  }
 }
 
+/*
 @media (min-width: 1150px) {
   .contacts {
     display: flex;
@@ -88,4 +133,5 @@
     margin-bottom: 80px;
   }
 }
+
  */
