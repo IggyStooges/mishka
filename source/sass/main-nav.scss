@@ -1,12 +1,11 @@
  @media (min-width: 768px) {
-  .main-nav {
-    order: 2;
-  }
-}
-/*
-@media (min-width: 1150px) {
-  .main-nav {
-    order: 0;
-  }
-}
-  */
+   .main-nav {
+     order: 2;
+   }
+ }
+
+ @media (min-width: 1150px) {
+   .main-nav {
+     order: 0;
+   }
+ }

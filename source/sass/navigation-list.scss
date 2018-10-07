@@ -46,10 +46,22 @@
   }
 }
 
-/*
-@media (min-width: 768px) {
+
+@media (min-width: 1250px) {
   .navigation-list {
     font-size: 17px;
   }
+
+  .navigation-list__item {
+    padding-left: 0;
+    padding-top: 30px;
+    width: 184px;
+    border: none;
+
+    &--form {
+      padding-left: 35px;
+      width: 195px;
+      border-left: 1px solid rgba(68, 68, 68, 0.1);
+    }
+  }
 }
- */

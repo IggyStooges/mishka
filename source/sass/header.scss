@@ -97,6 +97,7 @@
 
   .page-header__top-wrap {
     position: absolute;
+    z-index: 20;
     padding-top: 22px;
     padding-left: 0;
     left: 50px;
@@ -107,7 +108,6 @@
     width: 113px;
     height: 46px;
     background-image: url("../img/logo-tablet.svg");
-    margin-right: 210px;
   }
 
   .page-header__open-menu-btn {
@@ -145,9 +145,15 @@
   }
 }
 
-/* @media (min-width: 1150px) {
+@media (min-width: 1150px) {
   .page-header__wrapper {
     width: 1150px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .page-header__container {
+    width: 1050px;
     margin: 0 auto;
     display: flex;
   }
@@ -165,8 +171,10 @@
 
   .page-header__sale,
   .page-header__new {
+    width: 180px;
     padding: 0;
     margin: 0;
+    margin-right: 40px;
     display: block;
     order: 3;
     font-size: 15px;
@@ -175,7 +183,7 @@
 
   .page-header__top-wrap {
     padding: 0;
-    left: 496px;
+    left: 550px;
     top: 9px;
   }
-} */
+}
