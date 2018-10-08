@@ -23,12 +23,12 @@
       <div class="page-header__container">
         <nav class="main-nav">
           <ul class="main-nav__list navigation-list">
-            <li class="navigation-list__item">
+            <li class="navigation-list__item navigation-list__item--catalog">
               <a class="navigation-list__link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="navigation-list__item">
+            <li class="navigation-list__item navigation-list__item--form">
               <a class="navigation-list__link" href="form.html">
                 Вязание на заказ
               </a>
@@ -101,9 +101,9 @@
               <h3 class="catalog__item-title">
                 Большая корзинка
                 для игрушек </h3>
-              <p class="catalog__item-description">
+              <p class="catalog__item-description catalog__item-description--toys">
                 Диаметр 30 см, высота 30 см </p>
-              <div class="catalog__item-price">
+              <div class="catalog__item-price catalog__item-price--toys">
                 1 500 руб.
               </div>
             </div>
@@ -111,9 +111,6 @@
         </ul>
       </section>
       <section class="manufacturing">
-        <h2 class="manufacturing__header">
-          Процесс производства
-        </h2>
         <div class="manufacturing__video">
           <img class="manufacturing__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="rabbit">
           <button class="manufacturing__play-btn">
@@ -132,12 +129,17 @@
             </svg>
           </button>
         </div>
-        <p class="manufacturing__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="manufacturing__order-btn" href="form.html">
-          сделать заказ
-        </a>
+        <div class="manufacturing__wrap">
+          <h2 class="manufacturing__header">
+            Процесс производства
+          </h2>
+          <p class="manufacturing__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="manufacturing__order-btn" href="form.html">
+            сделать заказ
+          </a>
+        </div>
       </section>
     </div>
   </main>

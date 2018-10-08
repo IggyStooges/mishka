@@ -60,36 +60,82 @@
   .catalog__item {
     display: flex;
     flex-wrap: wrap;
-    border: none;
     padding: 0;
+    margin-bottom: 54px;
+    border: none;
   }
 
   .catalog__item-title {
-    width: 200px;
-    padding-right: 75px;
+    width: 240px;
+    padding-right: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .catalog__wrap {
+    width: 332px;
     border: 1px solid #ececec;
   }
 
   .catalog__item-price {
-    margin-top: 180px;
+    margin-top: 153px;
+    padding-left: 5px;
+    padding-bottom: 25px;
+    font-size: 17px;
+
+    &--toys {
+      margin-top: 129px;
+    }
+  }
+
+  .catalog__item-description {
+    font-size: 15px;
   }
 }
+
 
 @media (min-width: 1150px) {
   .catalog__list {
     display: flex;
+    padding: 0;
+    flex-wrap: wrap;
     width: auto;
   }
 
   .catalog__item {
     align-content: flex-start;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-bottom: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 
   .catalog__image {
     width: 316px;
     height: 462px;
+  }
+
+  .catalog__wrap {
+    width: 314px;
+  }
+
+  .catalog__item-price {
+    margin-top: 15px;
+    padding-left: 0;
+
+
+    &--toys {
+      margin-top: 11px;
+    }
+  }
+
+  .catalog__item-description {
+    &--toys {
+      padding-bottom: 0;
+    }
   }
 }
