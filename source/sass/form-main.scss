@@ -52,17 +52,22 @@
   }
 }
 
-/*
+
 @media (min-width: 1150px) {
   .form-main__wrapper {
     width: 1150px;
   }
 
+  .form-main__description {
+    width: 700px;
+    padding-left: 225px;
+  }
+
   .form-main__header {
     @include tablet-padding;
+    margin-bottom: 130px;
     width: 1050px;
     font-size: 53px;
     line-height: 57px;
   }
 }
- */
