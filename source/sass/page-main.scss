@@ -35,8 +35,8 @@
   }
 
   .page-main__head-block {
-    position: relative;
     @include tablet-padding;
+    position: relative;
     background-image: url("../img/hero-desktop@1x.jpg");
     padding-top: 155px;
   }

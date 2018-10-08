@@ -98,7 +98,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background-image: url("../img/bg-zigzag-line.svg")
+      background-image: url("../img/bg-zigzag-line.svg");
     }
   }
 
@@ -114,7 +114,6 @@
     margin-left: auto;
     text-align: center;
     line-height: 17px;
-
   }
 
   .week-item__name {
@@ -200,11 +199,13 @@
 
   .week-item__container {
     padding-top: 55px;
+    padding-left: 172px;
   }
 
   .week-item__description {
     width: 290px;
-    padding-top: 160px;
+    padding-top: 105px;
+    padding-bottom: 50px;
   }
 
   .week-item__name {
@@ -217,18 +218,8 @@
     padding-right: 50px;
   }
 
-  .week-item__container {
-    padding-left: 172px;
-  }
-
-  .week-item__description {
-    padding-top: 105px;
-    padding-bottom: 50px;
-  }
-
   .week-item__price {
     margin-top: 107px;
     margin-bottom: 35px;
-
   }
 }

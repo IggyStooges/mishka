@@ -93,7 +93,6 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 540px;
-
   }
 
   .contacts__item {
@@ -133,7 +132,10 @@
   .contacts__wrapper {
     padding: 0;
     padding-left: 175px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    width: 354px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .contacts__header {
@@ -141,18 +143,9 @@
     line-height: 57px;
   }
 
-  .contacts__wrapper {
-    padding: 0;
-    width: 354px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-
   .contacts__item {
     width: 354px;
   }
-
 
   .contacts__container {
     margin: 0;

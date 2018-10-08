@@ -19,15 +19,17 @@
 
   .page-footer__wrapper {
     @include tablet-padding;
-    width: 768px;
+    width: 668px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-}/*
+}
 
 @media (min-width: 1150px) {
   .page-footer__wrapper {
-    width: 1150px;
+    width: 1050px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
-} */
+}

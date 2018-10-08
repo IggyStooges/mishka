@@ -9,6 +9,7 @@
 }
 
 .social-list__link {
+
   &:hover,
   &:focus {
     .social-list__icon-path {
@@ -23,16 +24,12 @@
   }
 }
 
-@media (min-width: 768px) {
-  .page-footer__logo {
-    display: block;
-  }
+@media (min-width: 768px) {}
 
-  .page-footer__wrapper {
-    @include tablet-padding;
-    width: 768px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+@media (min-width: 1150px) {
+  .social-list {
+    padding: 0;
+    margin: 0;
   }
-}/*
+}
