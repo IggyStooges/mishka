@@ -22,12 +22,12 @@
       <div class="page-header__container">
         <nav class="main-nav">
           <ul class="main-nav__list navigation-list">
-            <li class="navigation-list__item">
+            <li class="navigation-list__item navigation-list__item--catalog">
               <a class="navigation-list__link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="navigation-list__item">
+            <li class="navigation-list__item navigation-list__item--form">
               <a class="navigation-list__link" href="form.html">
                 Вязание на заказ
               </a>
@@ -72,7 +72,7 @@
       <form class="form-main__form form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="form__fieldset">
           <div class="form__wrap">
-            <h3 class="form__legend">
+            <h3 class="form__title">
               ТИП
             </h3>
             <ul class="form__item-list">
@@ -93,9 +93,9 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--gray">
           <div class="form__wrap">
-            <h3 class="form__legend">
+            <h3 class="form__title">
               ЦВЕТ
             </h3>
             <ul class="form__item-list form__item-list--checkbox">
@@ -142,46 +142,46 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <div class="form__wrap">
-            <h3 class="form__legend">
+            <h3 class="form__title">
               ФИО
             </h3>
             <ul class="form__item-list">
               <li class="form__item form__item--name">
-                <label for="name" class="form__label">
+                <label for="name" class="form__label form__label--name">
                   Имя:
                 </label>
-                <input class="form__text-input" type="text" id="name" placeholder="Введите ваше имя*" name="name"
+                <input class="form__text-input form__text-input--name" type="text" id="name" placeholder="Введите ваше имя*" name="name"
                   required>
               </li>
-              <li class="form__item form__item--name">
-                <label for="surname" class="form__label">
+              <li class="form__item form__item--surname">
+                <label for="surname" class="form__label form__label--surname">
                   Фамилия:
                 </label>
-                <input class="form__text-input" type="text" id="surname" placeholder="Укажите фамилию*" name="surname"
+                <input class="form__text-input form__text-input--surname" type="text" id="surname" placeholder="Укажите фамилию*" name="surname"
                   required>
               </li>
-              <li class="form__item form__item--name">
-                <label for="patronymic" class="form__label">
+              <li class="form__item form__item--patronymic">
+                <label for="patronymic" class="form__label form__label--patronymic">
                   Отчество:
                 </label>
-                <input class="form__text-input form__text-input--last" type="text" id="patronymic" placeholder="Отчество, если желаете"
+                <input class="form__text-input form__text-input--patronymic" type="text" id="patronymic" placeholder="Отчество, если желаете"
                   name="patronymic">
               </li>
             </ul>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--contact">
+        <fieldset class="form__fieldset form__fieldset--contact form__fieldset--gray">
           <div class="form__wrap">
-            <h3 class="form__legend">
+            <h3 class="form__title">
               ТЕЛ
             </h3>
             <input class="form__text-input form__text-input--contact" type="tel" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
               name="telephone" required>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--contact">
+        <fieldset class="form__fieldset form__fieldset--contact form__fieldset--email form__fieldset--gray">
           <div class="form__wrap">
-            <h3 class="form__legend">
+            <h3 class="form__title form__title--email">
               E-MAIL
             </h3>
             <input class="form__text-input form__text-input--contact" type="email" id="e-mail" placeholder="Ваш Email*"
@@ -190,7 +190,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <div class="form__wrap">
-            <h3 class="form__legend">
+            <h3 class="form__title">
               ДОП
             </h3>
             <textarea class="form__textarea" cols="20" rows="9" placeholder="Опишите все ваши пожелания к заказу" name="wish">
