@@ -34,10 +34,11 @@
 
 @mixin button-reset {
   border: none;
-  background: none;
+  background: transparent;
 }
 
 @mixin styleguide-btn {
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -50,9 +51,11 @@
 
 @mixin user-btn {
   @include link-reset;
-  width: 150px;
+  cursor: pointer;
+  width: 260px;
   display: block;
-  padding: 14px 83px;
+  box-sizing: border-box;
+  padding: 14px 0;
   border: 2px solid #444444;
   font-size: 17px;
   line-height: 20px;
@@ -62,7 +65,8 @@
   &:hover,
   &:focus {
     border: none;
-    padding: 16px 83px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     background-color: #444444;
     color: #ffffff;
   }
@@ -71,3 +75,16 @@
     color: rgba(255, 255, 255, 0.3);
   }
 }
+
+@mixin link-text {
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6)
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+

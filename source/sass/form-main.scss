@@ -15,14 +15,15 @@
 
 .form-main__description {
   @include main-padding;
-  padding-top: 10px;
-  margin-bottom: 15px;
   width: 260px;
+  padding-top: 25px;
+  margin: 0;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
+/*
 @media (min-width: 768px) {
   .form-main {
     border-top: 1px solid rgba(68, 68, 68, 0.1);
@@ -71,3 +72,4 @@
     line-height: 57px;
   }
 }
+ */

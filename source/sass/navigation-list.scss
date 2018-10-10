@@ -7,15 +7,7 @@
 
 .navigation-list__link {
   @include link-reset;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active,
-  &:focus {
-    opacity: 0.3;
-  }
+  @include link-text;
 }
 
 .navigation-list__item {
@@ -29,6 +21,7 @@
   border-bottom: 1px solid #ececec;
 }
 
+/*
 @media (min-width: 768px) {
   .navigation-list {
     display: flex;
@@ -65,3 +58,4 @@
     }
   }
 }
+ */

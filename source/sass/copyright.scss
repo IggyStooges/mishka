@@ -1,6 +1,8 @@
 .copyright {
-  @include main-padding;
-  padding-bottom: 20px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .copyright__icon-path {
@@ -8,7 +10,18 @@
 }
 
 .copyright__link {
-  font-size: 0;
+  @include link-reset;
+  display: flex;
+  width: 100%;
+  font-size: 19px;
+  justify-content: space-between;
+  line-height: 18px;
+  font-weight: bold;
+
+  & span {
+    align-self: center;
+    ;
+  }
 
   &:hover,
   &:focus {
@@ -24,11 +37,12 @@
   }
 }
 
-.copyright__text {
-  font-size: 19px;
-  line-height: 18px;
+.copyright__icon {
+  width: 27px;
+  height: 34px;
 }
 
+/*
 @media (min-width: 768px) {
   .copyright__text {
     font-size: 19px;
@@ -56,7 +70,7 @@
     width: 182px;
   }
 }
-
+ */
 /*
 @media (min-width: 768px) {
 
