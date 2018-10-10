@@ -1,6 +1,6 @@
 .search-form {
   display: flex;
-  width: auto;
+  width: 320px;
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
 }
@@ -46,4 +46,35 @@
   height: 18px;
   padding: 30px;
   opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+  .search-form {
+    width: 82px;
+    box-sizing: border-box;
+    border: none;
+    margin-left: 320px;
+  }
+
+  .search-form__search-label {
+    width: 100%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .search-form__search {
+    width: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 1150px) {
+  .search-form {
+    order: 2;
+    margin-left: 322px;
+  }
 }

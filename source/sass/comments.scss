@@ -1,8 +1,6 @@
 .comments {
-  @include bottom-line;
+  @include main-padding;
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 51px;
   padding-top: 33px;
 }
@@ -32,6 +30,7 @@
 
 .comments__author-link {
   @include link-reset;
+  width: 125px;
   display: block;
   margin-top: 5px;
   font-size: 17px;
@@ -56,6 +55,7 @@
 
 .comments__write-btn {
   @include user-btn;
+  width: 90px;
 }
 
 .comments__author-name {
@@ -63,4 +63,125 @@
   line-height: 24px;
   font-style: normal;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .comments {
+    @include tablet-padding;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .comments__header {
+    width: 200px;
+    order: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .comments__write-btn {
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-left: auto;
+    order: 1;
+  }
+
+  .comments__list {
+    width: 668px;
+    padding-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  .comments__text {
+    width: 668px;
+    margin-bottom: 60px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .comments__items {
+    width: 668px;
+  }
+
+  .comments__author-name {
+    font-size: 18px;
+  }
+
+  .comments__slider-toggles {
+    width: 137px;
+    margin-right: 19px;
+    margin-left: auto;
+    margin-top: -40px;
+  }
+
+  .comments__button {
+    @include button-reset;
+    @include styleguide-btn;
+    border: none;
+    width: 50px;
+    height: 26px;
+    background-color: transparent;
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .comments__author-link {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .comments__header {
+    width: 225px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .comments {
+    margin-left: 50px;
+    width: 879px;
+    padding-top: 70px;
+    padding-left: 170px;
+    padding-bottom: 140px;
+    border-bottom: 24px solid black;
+  }
+
+  .comments__write-btn {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  .comments__text {
+    margin: 0;
+    padding-left: 5px;
+    width: 775px;
+    margin-bottom: 37px;
+  }
+
+  .comments__list {
+    width: 879px;
+  }
+
+  .comments__author-name {
+    line-height: 30px;
+  }
+
+
+  .comments__slider-toggles {
+    display: flex;
+    margin-top: -45px;
+    width: 135px;
+  }
+
+  .comments__items {
+    width: 879px;
+  }
 }

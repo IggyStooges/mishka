@@ -1,7 +1,6 @@
 .about-us {
+  @include main-padding;
   padding-top: 28px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 
 .about-us__header {
@@ -35,5 +34,82 @@
 
   &--native {
     width: 255px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    @include tablet-padding;
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .about-us__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about-us__item {
+    padding-top: 80px;
+    padding-bottom: 32px;
+    width: 50%;
+
+    &--materials {
+      order: 0;
+    }
+
+    &--love {
+      order: 1;
+    }
+
+    &--style {
+      order: 2;
+    }
+
+    &--native {
+      order: 3;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--box {
+      order: 5;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    @include tablet-padding;
+    padding-left: 225px;
+    padding-bottom: 85px;
+  }
+
+  .about-us__header {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__list {
+    width: 700px;
+  }
+
+
+  .about-us__item {
+    padding-top: 105px;
+    padding-bottom: 5px;
   }
 }

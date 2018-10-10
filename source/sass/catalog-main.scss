@@ -14,3 +14,49 @@
   text-align: center;
   background-color: #f1f1f1;
 }
+
+
+@media (min-width: 768px) {
+  .catalog-main {
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
+    margin-top: -82px;
+  }
+
+  .catalog-main__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .catalog-main__header {
+    @include tablet-padding;
+    width: 668px;
+    margin: 0;
+    margin-bottom: 85px;
+    position: relative;
+    padding-top: 95px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog-main {
+    margin-top: -47px;
+  }
+
+  .catalog-main__wrapper {
+    @include tablet-padding;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .catalog-main__header {
+    margin: 0;
+    margin-bottom: 160px;
+    margin-left: -50px;
+    margin-right: -50px;
+    width: auto;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

@@ -9,6 +9,11 @@
   padding-right: 30px;
 }
 
+@mixin tablet-padding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 @mixin bottom-line {
   &::after {
     position: absolute;
@@ -45,6 +50,7 @@
 
 @mixin user-btn {
   @include link-reset;
+  width: 150px;
   display: block;
   padding: 14px 83px;
   border: 2px solid #444444;

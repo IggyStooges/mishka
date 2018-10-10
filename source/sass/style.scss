@@ -1,19 +1,5 @@
 @font-face {
   font-family: "OpenSans";
-  src: url("../fonts/opensans.woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff");
-  font-weight: 800;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: "OpenSans";
   src: url("../fonts/opensans.woff2");
   font-weight: 400;
   font-style: normal;
@@ -22,6 +8,20 @@
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/opensansbold.woff2");
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensansbold.woff");
   font-weight: 800;
   font-style: bold;
 }
@@ -49,6 +49,7 @@ body {
 
 @import "mixin.scss";
 @import "header.scss";
+@import "main-nav.scss";
 @import "navigation-list.scss";
 @import "search-form.scss";
 @import "page-main.scss";
@@ -66,4 +67,5 @@ body {
 @import "manufacturing.scss";
 @import "form-main.scss";
 @import "form.scss";
-@import "normalize.scss"
+/* @import "normalize.scss"
+ */

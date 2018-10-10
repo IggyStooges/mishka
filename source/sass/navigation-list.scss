@@ -1,5 +1,7 @@
 .navigation-list {
   @include list-reset;
+  box-sizing: border-box;
+  width: 320px;
   border-top: 1px solid #ececec;
 }
 
@@ -17,6 +19,7 @@
 }
 
 .navigation-list__item {
+  @include main-padding;
   box-sizing: border-box;
   width: 320px;
   padding-top: 27px;
@@ -24,4 +27,41 @@
   padding-right: 50px;
   padding-bottom: 27px;
   border-bottom: 1px solid #ececec;
+}
+
+@media (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    width: auto;
+    border: none;
+    font-size: 15px;
+  }
+
+  .navigation-list__item {
+    padding-left: 0;
+    padding-top: 18px;
+    width: 167px;
+    border: none;
+    padding-right: 0;
+  }
+}
+
+
+@media (min-width: 1250px) {
+  .navigation-list {
+    font-size: 17px;
+  }
+
+  .navigation-list__item {
+    padding-left: 0;
+    padding-top: 30px;
+    width: 184px;
+    border: none;
+
+    &--form {
+      padding-left: 35px;
+      width: 195px;
+      border-left: 1px solid rgba(68, 68, 68, 0.1);
+    }
+  }
 }
