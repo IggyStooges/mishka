@@ -83,6 +83,7 @@
 @media (min-width: 768px) {
   .page-header__wrapper {
     @include tablet-padding;
+    box-sizing: border-box;
     position: relative;
     width: 768px;
     margin: 0 auto;
