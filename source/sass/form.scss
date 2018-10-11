@@ -120,7 +120,7 @@
     position: absolute;
     width: 25px;
     height: 24px;
-    right: 25px;
+    right: 5px;
     bottom: 25px;
     opacity: 0.2;
   }
@@ -129,7 +129,7 @@
     position: absolute;
     width: 32px;
     height: 21px;
-    right: 25px;
+    right: 5px;
     bottom: 30px;
     opacity: 0.2;
   }
@@ -217,7 +217,6 @@
   width: 260px;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 20px;
   margin-bottom: 18px;
   border: none;
   border-bottom: 2px solid black;
@@ -304,7 +303,6 @@
 }
 
 
-/*
 @media (min-width: 768px) {
   .form {
     padding: 0;
@@ -325,6 +323,10 @@
     &:nth-child(3) {
       padding-top: 50px;
       padding-bottom: 26px;
+    }
+
+    &:last-child {
+      padding-bottom: 48px;
     }
 
     &--gray {
@@ -414,6 +416,25 @@
     margin-bottom: 22px;
     font-size: 19px;
 
+
+    &--telephone {
+      padding: 0;
+      margin: 0;
+      width: 25px;
+      height: 24px;
+      right: 25px;
+      bottom: 15px;
+    }
+
+    &--email {
+      padding: 0;
+      margin: 0;
+      width: 32px;
+      height: 21px;
+      right: 23px;
+      bottom: 17px;
+    }
+
     &--name,
     &--surname,
     &--patronymic {
@@ -449,7 +470,7 @@
 
   .form__radio {
     &:checked {
-      & ~ .form__label {
+      &~.form__label {
         &--radio {
           &::after {
             left: 15px;
@@ -492,6 +513,8 @@
     margin-top: 50px;
   }
 }
+
+/*
 
 @media (min-width: 1150px) {
   .form__item-list {

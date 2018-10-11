@@ -14,21 +14,26 @@
   margin: 0 auto;
 }
 
-/*
+
 @media (min-width: 768px) {
+  .page-footer {
+    padding-top: 40px;
+  }
+
   .page-footer__logo {
     display: block;
   }
 
   .page-footer__wrapper {
     @include tablet-padding;
-    width: 668px;
+    box-sizing: border-box;
+    width: 768px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 }
 
+/*
 @media (min-width: 1150px) {
   .page-footer__wrapper {
     width: 1050px;

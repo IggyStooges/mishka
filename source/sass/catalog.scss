@@ -104,16 +104,17 @@
   }
 }
 
-/*item
 @media (min-width: 768px) {
   .catalog__list {
     @include tablet-padding;
     width: 668px;
   }
 
-  .catalog__image {
-    width: 334px;
-    height: 334px;
+  .catalog__link {
+    &--fix-height {
+      width: 334px;
+      height: 334px;
+    }
   }
 
   .catalog__item {
@@ -138,7 +139,7 @@
   }
 
   .catalog__item-price {
-    margin-top: 153px;
+    margin-top: 160px;
     padding-left: 5px;
     padding-bottom: 25px;
     font-size: 17px;
@@ -153,7 +154,7 @@
   }
 }
 
-
+/*
 @media (min-width: 1150px) {
   .catalog__list {
     display: flex;

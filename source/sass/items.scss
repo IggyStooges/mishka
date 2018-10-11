@@ -82,32 +82,31 @@ $btn-padding-top: 30px;
 
 }
 
-/*
 @media (min-width: 768px) {
   .items__list {
     display: flex;
     flex-wrap: wrap;
   }
 
-
   .items__item {
-    width: 110px;
+    width: 50%;
+  }
+
+  .items__link-btn {
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
     padding-right: 189px;
     padding-left: 35px;
 
     &:hover {
       height: $btn-tablet-height+5px;
     }
-  }
 
-  .items__link-btn {
-    padding-right: 0;
-    padding-top: 30px;
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 
+/*
 @media (min-width: 1150px) {
   .items__list {
     width: 1050px;

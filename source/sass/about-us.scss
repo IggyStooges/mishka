@@ -52,15 +52,15 @@
   }
 }
 
-/*
 @media (min-width: 768px) {
   .about-us {
     @include tablet-padding;
     padding-top: 45px;
-    padding-bottom: 50px;
+    padding-bottom: 32px;
   }
 
   .about-us__header {
+    margin-bottom: 38px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -74,8 +74,8 @@
   }
 
   .about-us__item {
-    padding-top: 80px;
-    padding-bottom: 32px;
+    padding-top: 60px;
+    padding-bottom: 52px;
     width: 50%;
 
     &--materials {
@@ -104,6 +104,7 @@
   }
 }
 
+/*
 @media (min-width: 1150px) {
   .about-us {
     @include tablet-padding;

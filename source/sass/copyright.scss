@@ -42,7 +42,6 @@
   height: 34px;
 }
 
-/*
 @media (min-width: 768px) {
   .copyright__text {
     font-size: 19px;
@@ -55,11 +54,7 @@
   }
 
   .copyright__link {
-    display: inline-block;
     box-sizing: border-box;
-    width: 27px;
-    height: 34px;
-    background-color: rebeccapurple;
   }
 
   .copyright {
@@ -68,10 +63,6 @@
     align-items: center;
     justify-content: space-between;
     width: 182px;
+    margin-left: auto;
   }
 }
- */
-/*
-@media (min-width: 768px) {
-
-} */
