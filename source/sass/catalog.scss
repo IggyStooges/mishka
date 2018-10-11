@@ -84,6 +84,7 @@
 
 .catalog__btn-basket {
   @include button-reset;
+  cursor: pointer;
   width: 21px;
   height: 18px;
   padding: 0;
@@ -154,7 +155,7 @@
   }
 }
 
-/*
+
 @media (min-width: 1150px) {
   .catalog__list {
     display: flex;
@@ -184,12 +185,12 @@
   }
 
   .catalog__item-price {
-    margin-top: 15px;
+    margin-top: 20px;
     padding-left: 0;
 
 
     &--toys {
-      margin-top: 11px;
+      margin-top: 15px;
     }
   }
 
@@ -198,5 +199,11 @@
       padding-bottom: 0;
     }
   }
+
+  .catalog__link {
+    &--fix-height {
+      width: 316px;
+      height: 462px;
+    }
+  }
 }
- */

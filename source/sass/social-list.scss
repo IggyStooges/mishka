@@ -13,7 +13,6 @@
 }
 
 .social-list__link {
-
   &:hover,
   &:focus {
     .social-list__icon-path {
@@ -34,12 +33,14 @@
     padding: 0;
     padding-top: 20px;
     margin-left: 163px;
+    border: none;
   }
 }
 
-/* @media (min-width: 1150px) {
+@media (min-width: 1150px) {
   .social-list {
     padding: 0;
     margin: 0;
+    margin-left: 350px;
   }
-} */
+}

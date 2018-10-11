@@ -38,7 +38,6 @@
 }
 
 @mixin styleguide-btn {
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -77,14 +76,12 @@
 }
 
 @mixin link-text {
-
   &:hover,
   &:focus {
-    color: rgba(0, 0, 0, 0.6)
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
 }
-

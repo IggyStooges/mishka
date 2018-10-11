@@ -16,11 +16,11 @@
         <a class="page-header__logo" href="index.html">
           Логотип мишка - ссылка на главную
         </a>
-        <button type="button" class="page-header__open-menu-btn">
+        <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
           Открыть меню
         </button>
       </div>
-      <div class="page-header__container close-menu">
+      <div class="page-header__container page-header__container--nojs page-header__container--closed">
         <nav class="main-nav">
           <ul class="main-nav__list navigation-list">
             <li class="navigation-list__item navigation-list__item--catalog">
@@ -190,7 +190,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056"
           xml:space="preserve">
@@ -291,6 +291,26 @@
       </form>
     </div>
   </section>
+  <script>
+    var navMain = document.querySelector('.page-header__container');
+    var navToggle = document.querySelector('.page-header__open-menu-btn');
+    var modalWindow = document.querySelector('.modal-window');
+    var modalOpen = document.querySelector('.catalog__btn-basket');
+
+    navMain.classList.remove('page-header__container--nojs');
+    navToggle.classList.remove('page-header__open-menu-btn--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header__container--closed')) {
+        navMain.classList.remove('page-header__container--closed');
+        navToggle.classList.add('page-header__open-menu-btn--close');
+      } else {
+        navMain.classList.add('page-header__container--closed');
+        navToggle.classList.remove('page-header__open-menu-btn--close');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

@@ -78,8 +78,6 @@ $btn-padding-top: 30px;
       background-image: url("../img/icon-toy.svg");
     }
   }
-
-
 }
 
 @media (min-width: 768px) {
@@ -102,25 +100,20 @@ $btn-padding-top: 30px;
     &:hover {
       height: $btn-tablet-height+5px;
     }
-
   }
 }
 
-/*
+
 @media (min-width: 1150px) {
   .items__list {
     width: 1050px;
   }
 
   .items__item {
-    width: 136px;
-    padding-right: 354px;
-    padding-left: 35px;
+    width: 50%;
   }
-
 
   .items__link-btn {
     padding-right: 370px;
   }
 }
- */

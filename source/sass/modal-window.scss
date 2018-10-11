@@ -7,6 +7,10 @@
   background-color: rgba(255, 255, 255, 0.9);
   top: 0;
   left: 0;
+
+  &--open {
+    display: block;
+  }
 }
 
 .modal-window__wrapper {
@@ -65,7 +69,7 @@
 
 .modal-window__radio {
   &:checked {
-    ~.modal-window__label {
+    & ~ .modal-window__label {
       border: 2px solid #63d1bb;
     }
   }
@@ -80,4 +84,38 @@
   font-size: 17px;
   line-height: 16px;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-window__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 570px;
+  }
+
+  .modal-window__header {
+    width: auto;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-window__tip {
+    font-size: 17px;
+  }
+
+  .modal-window__label {
+    display: block;
+    box-sizing: border-box;
+    width: 112px;
+    height: 52px;
+    padding: 16px 50px;
+    border: 2px solid #ececec;
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  .modal-window__btn {
+    width: 100%;
+  }
 }

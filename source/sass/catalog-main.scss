@@ -37,7 +37,7 @@
     line-height: 50px;
   }
 }
-/*
+
 
 @media (min-width: 1150px) {
   .catalog-main {
@@ -52,12 +52,16 @@
 
   .catalog-main__header {
     margin: 0;
-    margin-bottom: 160px;
+    margin-bottom: 115px;
     margin-left: -50px;
     margin-right: -50px;
+    padding-bottom: 85px;
     width: auto;
     font-size: 53px;
     line-height: 57px;
+    border-bottom: 34px solid rgba(0, 0, 0, 1);
+    border-image-source: url("../img/bg-zigzag-fill.svg");
+    border-image-repeat: round;
+    border-image-slice: 40;
   }
 }
- */

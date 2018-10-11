@@ -33,12 +33,29 @@
   }
 }
 
-/*
+
 @media (min-width: 1150px) {
+  .page-footer {
+    padding-top: 50px;
+  }
+
   .page-footer__wrapper {
-    width: 1050px;
-    padding-top: 55px;
+    box-sizing: border-box;
+    width: 1150px;
     padding-bottom: 55px;
+    justify-content: space-between;
+
+    .page-footer__logo {
+      &:hover,
+      &:focus {
+        & path {
+          fill: #46c1ae;
+        }
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }
- */

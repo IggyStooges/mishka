@@ -137,7 +137,7 @@
 
 .form__radio {
   &:checked {
-    &~.form__label {
+    & ~ .form__label {
       &--radio {
         &::after {
           content: "";
@@ -157,7 +157,7 @@
 
 
   &:hover {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: #62d1ba;
       }
@@ -166,7 +166,7 @@
 
 
   &:disabled {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: rgba(0, 0, 0, 0.3);
       }
@@ -176,7 +176,7 @@
 
 .form__checkbox {
   &:checked {
-    &~.form__label {
+    & ~ .form__label {
       &::after {
         content: "";
         display: block;
@@ -191,20 +191,18 @@
         transform: rotate(-45deg);
       }
     }
-
   }
 
   &:hover {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: #62d1ba;
       }
     }
-
   }
 
   &:disabled {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: rgba(0, 0, 0, 0.3);
       }
@@ -237,7 +235,7 @@
   &:active {
     border-color: #62d1ba;
 
-    &~.form__label {
+    & ~ .form__label {
       opacity: 1;
 
       & path {
@@ -251,7 +249,7 @@
     opacity: 1;
     color: #444444;
 
-    &~.form__label {
+    & ~ .form__label {
       & path {
         fill: #62d1ba;
       }
@@ -470,7 +468,7 @@
 
   .form__radio {
     &:checked {
-      &~.form__label {
+      & ~ .form__label {
         &--radio {
           &::after {
             left: 15px;
@@ -511,10 +509,13 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 50px;
+
+    &:hover {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
   }
 }
-
-/*
 
 @media (min-width: 1150px) {
   .form__item-list {
@@ -544,6 +545,14 @@
       padding-top: 43px;
       padding-bottom: 50px;
     }
+
+    &--contact {
+      padding-top: 50px;
+    }
+
+    &--email {
+      padding-top: 15px;
+    }
   }
 
   .form__item {
@@ -553,7 +562,7 @@
 
     &--checkbox {
       width: 175px;
-      margin-right: 90px;
+      margin-right: 85px;
 
       &:nth-child(2n) {
         margin-left: 0;
@@ -594,6 +603,16 @@
   }
 
   .form__label {
+    &--telephone {
+      right: 185px;
+      bottom: 20px;
+    }
+
+    &--email {
+      right: 180px;
+      bottom: 23px;
+    }
+
     &--name,
     &--surname,
     &--patronymic {
@@ -608,15 +627,19 @@
     margin-left: 40px;
   }
 
+  .form__title {
+    &--email,
+    &--telephone {
+      padding-right: 27px;
+    }
+  }
 
   .form__submit-btn {
     margin-left: 110px;
-    margin-top: 40px;
+    margin-top: 47px;
   }
-
 
   .form__footnote {
     margin-left: auto;
   }
 }
- */

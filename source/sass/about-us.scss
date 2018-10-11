@@ -104,11 +104,11 @@
   }
 }
 
-/*
+
 @media (min-width: 1150px) {
   .about-us {
     @include tablet-padding;
-    padding-left: 225px;
+    padding-left: 223px;
     padding-bottom: 85px;
   }
 
@@ -129,5 +129,15 @@
     padding-top: 105px;
     padding-bottom: 5px;
   }
+
+
+  .about-us__item-img {
+    position: absolute;
+    top: 50px;
+    left: 3px;
+
+    &--rocket {
+      left: -3px;
+    }
+  }
 }
- */
