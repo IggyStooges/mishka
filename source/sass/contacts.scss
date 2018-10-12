@@ -13,7 +13,7 @@
 }
 
 .contacts__wrapper {
-  margin-bottom: 530px;
+  margin-bottom: 532px;
 }
 
 .contacts__item {
@@ -23,7 +23,37 @@
 }
 
 .contacts__email {
+  @include link-reset;
   margin-left: auto;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #62d1ba;
+  }
+
+  &:hover {
+    color: #46c1ae;
+
+    &::after {
+      background-color: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      opacity: 0.1;
+      width: 90%;
+    }
+  }
 }
 
 .contacts__adress {
@@ -36,7 +66,7 @@
   position: absolute;
   bottom: 130px;
   left: 0;
-  width: 322px;
+  width: 320px;
   height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -44,21 +74,31 @@
 
 .contacts__write-us-btn {
   @include user-btn;
-  @include tablet-padding;
-  box-sizing: border-box;
-  width: 260px;
+  padding-left: 51px;
+  padding-right: 51px;
 
-  &:hover,
-  &:focus {
-    border: none;
-    padding: 16px 50px;
+  &:hover {
+    padding-left: 53px;
+    padding-right: 53px;
   }
 }
 
 @media (min-width: 768px) {
   .contacts {
+    position: relative;
     padding: 0;
-    padding-top: 90px;
+    padding-top: 60px;
+
+    &::before {
+      position: absolute;
+      right: 51px;
+      top: 44px;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__container {
@@ -85,6 +125,12 @@
     padding-left: 40px;
     padding-right: 35px;
     margin: 0 auto;
+    margin-bottom: 60px;
+
+    &:hover {
+      padding-left: 42px;
+      padding-right: 37px;
+    }
   }
 
   .contacts__wrapper {
@@ -92,7 +138,7 @@
     display: flex;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 540px;
+    margin-bottom: 535px;
   }
 
   .contacts__item {
@@ -117,6 +163,11 @@
     padding-left: 222px;
     padding-top: 70px;
     padding-bottom: 102px;
+
+    &::before {
+      left: 113px;
+      top: 135px;
+    }
   }
 
   .contacts__map {
@@ -131,7 +182,6 @@
 
   .contacts__wrapper {
     padding: 0;
-    padding-left: 175px;
     margin-bottom: 50px;
     width: 354px;
     display: flex;
@@ -150,7 +200,7 @@
   .contacts__container {
     margin: 0;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 75px;
     width: 354px;
   }
 

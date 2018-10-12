@@ -17,17 +17,19 @@
 .page-main__header {
   @include main-padding;
   margin: 0;
-  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 121px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
 }
 
+
 @media (min-width: 768px) {
   .page-main {
     border-top: 1px solid rgba(68, 68, 68, 0.1);
-    margin-top: -82px;
+    margin-top: -69px;
   }
 
   .page-main__wrapper {

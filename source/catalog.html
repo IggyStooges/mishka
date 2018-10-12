@@ -16,11 +16,11 @@
         <a class="page-header__logo" href="index.html">
           Логотип мишка - ссылка на главную
         </a>
-        <button type="button" class="page-header__open-menu-btn">
+        <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
           Открыть меню
         </button>
       </div>
-      <div class="page-header__container">
+      <div class="page-header__container page-header__container--nojs page-header__container--closed">
         <nav class="main-nav">
           <ul class="main-nav__list navigation-list">
             <li class="navigation-list__item navigation-list__item--catalog">
@@ -36,6 +36,7 @@
           </ul>
         </nav>
         <form class="page-header__form search-form" method="POST" action="https://echo.htmlacademy.ru">
+          <input type="search" class="search-form__search" id="search" placeholder="Поиск по сайту">
           <label for="search" class="search-form__search-label">
             <svg class="search-form__search-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18" height="18" viewBox="-0.8 -0.8 17.6 17.6"
@@ -43,9 +44,13 @@
               <path class="search-form__search-path" fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
             </svg>
           </label>
-          <input type="search" class="search-form__search" id="search" placeholder="Поиск по сайту">
         </form>
         <a class="page-header__basket" href="basket.html">
+          <svg class="page-header__basket-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="21" height="18" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
+            xml:space="preserve">
+            <path class="page-header__basket-path" fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+          </svg>
           Корзина: пока пуста
         </a>
         <a class="page-header__new">
@@ -68,43 +73,76 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
-          <li class="catalog__item catalog__item--hare">
-            <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="rabbit">
+          <li class="catalog__item catalog__item--hare" tabindex="0">
+            <a class="catalog__link catalog__link--fix-height" href="rabbit.html">
+              <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+            </a>
             <div class="catalog__wrap">
-              <h3 class="catalog__item-title">
-                Зайчик-попрыгайчик
-              </h3>
+              <a class="catalog__link" href="rabbit.html">
+                <h3 class="catalog__item-title">
+                  Зайчик-попрыгайчик
+                </h3>
+              </a>
               <p class="catalog__item-description">
                 Рост 30 см, вес 200 г
               </p>
               <div class="catalog__item-price">
                 1 200 руб.
+                <button class="catalog__btn-basket">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849"
+                    enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+                  </svg>
+                </button>
               </div>
             </div>
           </li>
-          <li class="catalog__item catalog__item--bowl">
-            <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="rabbit">
+          <li class="catalog__item catalog__item--bowl" tabindex="0">
+            <a class="catalog__link catalog__link--fix-height" href="rabbit.html">
+              <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            </a>
             <div class="catalog__wrap">
-              <h3 class="catalog__item-title">
-                Корзинка для белья
-              </h3>
+              <a class="catalog__link" href="rabbit.html">
+                <h3 class="catalog__item-title">
+                  Корзинка для белья
+                </h3>
+              </a>
               <p class="catalog__item-description">
                 Диаметр 15 см, высота 10 см </p>
               <div class="catalog__item-price">
                 690 руб.
+                <button class="catalog__btn-basket">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849"
+                    enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+                  </svg>
+                </button>
               </div>
             </div>
           </li>
-          <li class="catalog__item catalog__item--toys">
-            <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="rabbit">
+          <li class="catalog__item catalog__item--toys" tabindex="0">
+            <a class="catalog__link catalog__link--fix-height" href="rabbit.html">
+              <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="игрушки">
+            </a>
             <div class="catalog__wrap">
-              <h3 class="catalog__item-title">
-                Большая корзинка
-                для игрушек </h3>
+              <a class="catalog__link" href="rabbit.html">
+                <h3 class="catalog__item-title">
+                  Большая корзинка
+                  для игрушек </h3>
+              </a>
               <p class="catalog__item-description catalog__item-description--toys">
                 Диаметр 30 см, высота 30 см </p>
               <div class="catalog__item-price catalog__item-price--toys">
                 1 500 руб.
+                <button class="catalog__btn-basket">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849"
+                    enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                    <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+                  </svg>
+                </button>
               </div>
             </div>
           </li>
@@ -131,6 +169,13 @@
         </div>
         <div class="manufacturing__wrap">
           <h2 class="manufacturing__header">
+            <svg class="manufacturing__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32"
+              xml:space="preserve">
+              <g transform="translate(0 192)">
+                <path class="manufacturing__path" d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z" />
+              </g>
+            </svg>
             Процесс производства
           </h2>
           <p class="manufacturing__description">
@@ -145,7 +190,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="101.615px" height="34.056px" viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056"
           xml:space="preserve">
@@ -205,40 +250,67 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
+          <span>
+            Разработано:
+          </span>
+          <span class="visually-hidden">
+            HTML Academy
+          </span>
+          <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="10 10 40 40">
             <path class="copyright__icon-path" fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" /></svg>
-          HTML Academy
         </a>
       </div>
     </div>
   </footer>
   <section class="modal-window">
-    <h2 class="modal-window__header">
-      Добавить в корзину
-    </h2>
-    <p class="modal-window__tip">
-      Выберите размер
-    </p>
-    <form class="modal-window__form" method="POST" action="https://echo.htmlacademy.ru">
-      <ul class="modal-window__list">
-        <li class="modal-window__list-item">
-          <input type="radio" class="modal-window__radio visually-hidden" id="small" value="small" name="size" checked>
-          <label for="small" class="modal-window__label">S</label>
-        </li>
-        <li class="modal-window__list-item">
-          <input type="radio" class="modal-window__radio visually-hidden" id="medium" value="medium" name="size">
-          <label for="medium" class="modal-window__label ">M</label>
-        </li>
-        <li class="modal-window__list-item">
-          <input type="radio" class="modal-window__radio visually-hidden" id="large" value="large" name="size">
-          <label for="large" class="modal-window__label">L</label>
-        </li>
-      </ul>
-      <button type="submit" class="modal-window__btn">Добавить</button>
-    </form>
+    <div class="modal-window__wrapper">
+      <h2 class="modal-window__header">
+        Добавить в корзину
+      </h2>
+      <p class="modal-window__tip">
+        Выберите размер
+      </p>
+      <form class="modal-window__form" method="POST" action="https://echo.htmlacademy.ru">
+        <ul class="modal-window__list">
+          <li class="modal-window__list-item">
+            <input type="radio" class="modal-window__radio visually-hidden" id="small" value="small" name="size"
+              checked>
+            <label for="small" class="modal-window__label">S</label>
+          </li>
+          <li class="modal-window__list-item">
+            <input type="radio" class="modal-window__radio visually-hidden" id="medium" value="medium" name="size">
+            <label for="medium" class="modal-window__label ">M</label>
+          </li>
+          <li class="modal-window__list-item">
+            <input type="radio" class="modal-window__radio visually-hidden" id="large" value="large" name="size">
+            <label for="large" class="modal-window__label">L</label>
+          </li>
+        </ul>
+        <button type="submit" class="modal-window__btn">Добавить</button>
+      </form>
+    </div>
   </section>
+  <script>
+    var navMain = document.querySelector('.page-header__container');
+    var navToggle = document.querySelector('.page-header__open-menu-btn');
+    var modalWindow = document.querySelector('.modal-window');
+    var modalOpen = document.querySelector('.catalog__btn-basket');
+
+    navMain.classList.remove('page-header__container--nojs');
+    navToggle.classList.remove('page-header__open-menu-btn--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('page-header__container--closed')) {
+        navMain.classList.remove('page-header__container--closed');
+        navToggle.classList.add('page-header__open-menu-btn--close');
+      } else {
+        navMain.classList.add('page-header__container--closed');
+        navToggle.classList.remove('page-header__open-menu-btn--close');
+      }
+    });
+
+  </script>
 </body>
 
 </html>

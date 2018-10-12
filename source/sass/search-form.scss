@@ -6,6 +6,7 @@
 }
 
 .search-form__search {
+  order: 2;
   padding-top: 27px;
   padding-bottom: 27px;
   padding-right: 10px;
@@ -17,6 +18,24 @@
   line-height: 24px;
   font-weight: bold;
   outline: none;
+
+  &:hover,
+  &:focus {
+    & ~ .search-form__search-label {
+      opacity: 1;
+
+      & path {
+        fill: #63d1bb;
+      }
+    }
+  }
+
+  &:active,
+  &:focus {
+    & ~ .search-form__search-label {
+      opacity: 0.3;
+    }
+  }
 
   &::placeholder {
     opacity: 1;
@@ -42,6 +61,7 @@
 }
 
 .search-form__search-label {
+  order: 1;
   width: 18px;
   height: 18px;
   padding: 30px;

@@ -78,7 +78,13 @@
 
 .week-item__btn {
   @include user-btn;
-  width: 90px;
+  padding-left: 83px;
+  padding-right: 83px;
+
+  &:hover {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -105,11 +111,17 @@
   .week-item__btn {
     padding-left: 100px;
     padding-right: 100px;
+    width: 292px;
+
+    &:hover {
+      padding-left: 102px;
+      padding-right: 102px;
+    }
   }
 
   .week-item__header {
     width: 80px;
-    padding-top: 40px;
+    padding-top: 45px;
     padding-right: 20px;
     margin-left: auto;
     text-align: center;
@@ -119,7 +131,7 @@
   .week-item__name {
     font-size: 43px;
     line-height: 50px;
-    padding-top: 35px;
+    padding-top: 40px;
   }
 
   .week-item__head-container {
@@ -142,6 +154,8 @@
   .week-item__price {
     width: 150px;
     font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 35px;
   }
 
   .week-item__container {
@@ -150,7 +164,7 @@
 
   .week-item__table {
     width: 290px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .week-item__description {
@@ -167,6 +181,7 @@
     }
   }
 }
+
 
 @media (min-width: 1150px) {
   .week-item__wrap {
@@ -211,6 +226,7 @@
   .week-item__name {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 35px;
   }
 
   .week-item__header {
