@@ -65,7 +65,10 @@
   width: 18px;
   height: 18px;
   padding: 30px;
-  opacity: 0.2;
+
+  & path {
+    opacity: 0.2;
+  }
 }
 
 @media (min-width: 768px) {
@@ -78,8 +81,8 @@
 
   .search-form__search-label {
     width: 100%;
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(68, 68, 68, 0.1);
+    border-left: 1px solid rgba(68, 68, 68, 0.1);
     padding-top: 32px;
     padding-bottom: 32px;
   }

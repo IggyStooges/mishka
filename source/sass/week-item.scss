@@ -2,7 +2,7 @@
   @include main-padding;
   @include zigzag-line;
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
 }
 
 .week-item__name {
@@ -131,6 +131,7 @@
     width: 333px;
     height: 404px;
     margin-left: auto;
+    margin-top: 5px;
   }
 
   .week-item picture {
@@ -170,16 +171,11 @@
 
 @media (min-width: 1150px) {
   .week-item__wrap {
-    padding-top: 65px;
+    padding-top: 69px;
   }
 
   .week-item {
     padding-bottom: 94px;
-
-    &::after {
-      height: 23px;
-      background-size: 1150px 100%;
-    }
   }
 
   .week-item__img {

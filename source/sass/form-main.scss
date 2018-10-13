@@ -70,6 +70,7 @@
   }
 
   .form-main__description {
+    padding-top: 15px;
     width: 700px;
     padding-left: 225px;
   }
@@ -81,5 +82,11 @@
     padding-bottom: 120px;
     font-size: 53px;
     line-height: 57px;
+
+    &::after {
+      bottom: 0;
+      height: 34px;
+      background-position-x: 0;
+    }
   }
 }

@@ -91,7 +91,7 @@
   .contacts {
     position: relative;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 55px;
 
     &::before {
       position: absolute;
@@ -117,7 +117,7 @@
   }
 
   .contacts__map {
-    bottom: 110px;
+    bottom: 105px;
     width: 768px;
     height: 457px;
     background-image: url("../img/map-tablet@1x.jpg");
@@ -171,8 +171,8 @@
     display: flex;
     width: 879px;
     padding-left: 222px;
-    padding-top: 70px;
-    padding-bottom: 102px;
+    padding-top: 65px;
+    padding-bottom: 107px;
 
     &::before {
       left: 113px;
@@ -204,6 +204,7 @@
   }
 
   .contacts__header {
+    margin-bottom: 45px;
     font-size: 53px;
     line-height: 57px;
   }
