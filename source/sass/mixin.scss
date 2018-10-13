@@ -100,12 +100,43 @@
     background-image: url("../img/bg-zigzag-fill.svg");
     background-size: 768px 100%;
     background-position-x: 1px;
+
+    @media (min-width: 1150px) {
+      &::after {
+        height: 34px;
+        background-size: 1150px 100%;
+      }
+    }
   }
 }
 
-@mixin zigzag-fill-desktop {
+@mixin zigzag-line {
+  position: relative;
+
   &::after {
-    height: 34px;
-    background-size: 1150px 100%;
+    content: "";
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position-x: 1px;
+  }
+
+  @media (min-width: 768px) {
+    &::after {
+      height: 17px;
+      background-size: 768px 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &::after {
+      height: 23px;
+      background-size: 1050px 100%;
+    }
   }
 }

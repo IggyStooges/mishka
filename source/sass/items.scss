@@ -1,8 +1,3 @@
-$btn-height: 108px;
-$btn-tablet-height: 120px;
-$btn-padding-top: 30px;
-
-
 .items__list {
   @include list-reset;
   font-size: 19px;
@@ -36,7 +31,7 @@ $btn-padding-top: 30px;
   }
 
   &:hover {
-    padding-top: 20px;
+    margin-top: -5px;
     padding-bottom: 35px;
 
     &::before {
@@ -92,19 +87,13 @@ $btn-padding-top: 30px;
   }
 
   .items__link-btn {
-    padding-top: 30px;
+    padding-top: 25px;
     font-size: 20px;
     line-height: 30px;
     padding-right: 189px;
     padding-left: 35px;
-
-    &:hover {
-      padding-top: 25px;
-      padding-bottom: 35px;
-    }
   }
 }
-
 
 @media (min-width: 1150px) {
   .items__list {

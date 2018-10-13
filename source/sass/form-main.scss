@@ -76,7 +76,6 @@
 
   .form-main__header {
     @include tablet-padding;
-    @include zigzag-fill-desktop;
     margin-bottom: 90px;
     width: 1050px;
     padding-bottom: 120px;
