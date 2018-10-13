@@ -1,3 +1,7 @@
+.form-main {
+  display: block;
+}
+
 .form-main__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -34,10 +38,13 @@
   }
 
   .form-main__header {
+    @include zigzag-fill;
     @include tablet-padding;
+    position: relative;
     width: 668px;
     padding-top: 95px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
+    padding-bottom: 90px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -55,7 +62,7 @@
 
 @media (min-width: 1150px) {
   .form-main {
-    margin-top: -45px;
+    margin-top: -47px;
   }
 
   .form-main__wrapper {
@@ -69,14 +76,11 @@
 
   .form-main__header {
     @include tablet-padding;
+    @include zigzag-fill-desktop;
     margin-bottom: 90px;
     width: 1050px;
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     font-size: 53px;
     line-height: 57px;
-    border-bottom: 34px solid rgba(0, 0, 0, 1);
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-repeat: round;
-    border-image-slice: 40;
   }
 }

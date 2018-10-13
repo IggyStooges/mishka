@@ -1,3 +1,7 @@
+.catalog-main {
+  display: block;
+}
+
 .catalog-main__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -18,7 +22,7 @@
 @media (min-width: 768px) {
   .catalog-main {
     border-top: 1px solid rgba(68, 68, 68, 0.1);
-    margin-top: -70px;
+    margin-top: -65px;
   }
 
   .catalog-main__wrapper {
@@ -28,11 +32,12 @@
 
   .catalog-main__header {
     @include tablet-padding;
+    @include zigzag-fill;
     width: 668px;
     margin: 0;
-    margin-bottom: 85px;
-    position: relative;
+    margin-bottom: 70px;
     padding-top: 95px;
+    padding-bottom: 90px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -51,17 +56,14 @@
   }
 
   .catalog-main__header {
+    @include zigzag-fill-desktop;
     margin: 0;
     margin-bottom: 115px;
     margin-left: -50px;
     margin-right: -50px;
-    padding-bottom: 85px;
+    padding-bottom: 120px;
     width: auto;
     font-size: 53px;
     line-height: 57px;
-    border-bottom: 34px solid rgba(0, 0, 0, 1);
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-repeat: round;
-    border-image-slice: 40;
   }
 }

@@ -85,3 +85,27 @@
     color: rgba(0, 0, 0, 0.3);
   }
 }
+
+
+@mixin zigzag-fill {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 24px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 768px 100%;
+    background-position-x: 1px;
+  }
+}
+
+@mixin zigzag-fill-desktop {
+  &::after {
+    height: 34px;
+    background-size: 1150px 100%;
+  }
+}
