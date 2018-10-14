@@ -29,7 +29,7 @@
     box-sizing: border-box;
     width: 768px;
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 }
 
@@ -44,18 +44,19 @@
     width: 1150px;
     padding-bottom: 55px;
     justify-content: space-between;
+    align-items: baseline;
+  }
 
-    .page-footer__logo {
-      &:hover,
-      &:focus {
-        & path {
-          fill: #46c1ae;
-        }
+  .page-footer__logo {
+    &:hover,
+    &:focus {
+      & path {
+        fill: #46c1ae;
       }
+    }
 
-      &:active {
-        opacity: 0.3;
-      }
+    &:active {
+      opacity: 0.3;
     }
   }
 }

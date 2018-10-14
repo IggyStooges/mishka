@@ -14,7 +14,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__top-wrap">
         <a class="page-header__logo" href="index.html">
-          Логотип мишка - ссылка на главную
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="papage-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип мишка ссылка на главную страницу">
+          </picture>
         </a>
         <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
           Открыть меню
@@ -53,10 +57,10 @@
           </svg>
           Корзина: пока пуста
         </a>
-        <a class="page-header__new">
+        <a class="page-header__new" href="new-items.html">
           Новые поступления
         </a>
-        <a class="page-header__sale">
+        <a class="page-header__sale" href="sale.html">
           Распродажа
         </a>
         <p class="page-header__delivery">
@@ -75,7 +79,12 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog__item--hare" tabindex="0">
             <a class="catalog__link catalog__link--fix-height" href="rabbit.html">
-              <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x"
+                  alt="Зайчик-попрыгайчик">
+              </picture>
             </a>
             <div class="catalog__wrap">
               <a class="catalog__link" href="rabbit.html">
@@ -99,11 +108,16 @@
             </div>
           </li>
           <li class="catalog__item catalog__item--bowl" tabindex="0">
-            <a class="catalog__link catalog__link--fix-height" href="rabbit.html">
-              <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
+            <a class="catalog__link catalog__link--fix-height" href="bowl.html">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x"
+                  alt="Корзинка для белья">
+              </picture>
             </a>
             <div class="catalog__wrap">
-              <a class="catalog__link" href="rabbit.html">
+              <a class="catalog__link" href="bowl.html">
                 <h3 class="catalog__item-title">
                   Корзинка для белья
                 </h3>
@@ -123,11 +137,16 @@
             </div>
           </li>
           <li class="catalog__item catalog__item--toys" tabindex="0">
-            <a class="catalog__link catalog__link--fix-height" href="rabbit.html">
-              <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="игрушки">
+            <a class="catalog__link catalog__link--fix-height" href="toys.html">
+              <picture>
+                <source media="(min-width:1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width:768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="catalog__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x"
+                  alt="игрушки">
+              </picture>
             </a>
             <div class="catalog__wrap">
-              <a class="catalog__link" href="rabbit.html">
+              <a class="catalog__link" href="toys.html">
                 <h3 class="catalog__item-title">
                   Большая корзинка
                   для игрушек </h3>
@@ -150,7 +169,11 @@
       </section>
       <section class="manufacturing">
         <div class="manufacturing__video">
-          <img class="manufacturing__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="rabbit">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="manufacturing__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="процесс производства">
+          </picture>
           <button class="manufacturing__play-btn">
             <svg class="manufacturing__play-icon" version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100" height="76" viewBox="247.3 382.56 100.678 76.891"
@@ -291,26 +314,9 @@
       </form>
     </div>
   </section>
-  <script>
-    var navMain = document.querySelector('.page-header__container');
-    var navToggle = document.querySelector('.page-header__open-menu-btn');
-    var modalWindow = document.querySelector('.modal-window');
-    var modalOpen = document.querySelector('.catalog__btn-basket');
 
-    navMain.classList.remove('page-header__container--nojs');
-    navToggle.classList.remove('page-header__open-menu-btn--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('page-header__container--closed')) {
-        navMain.classList.remove('page-header__container--closed');
-        navToggle.classList.add('page-header__open-menu-btn--close');
-      } else {
-        navMain.classList.add('page-header__container--closed');
-        navToggle.classList.remove('page-header__open-menu-btn--close');
-      }
-    });
-
-  </script>
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

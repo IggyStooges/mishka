@@ -1,3 +1,7 @@
+.catalog-main {
+  display: block;
+}
+
 .catalog-main__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -6,7 +10,6 @@
 .catalog-main__header {
   width: 260px;
   margin: 0;
-  margin-top: 18px;
   margin-bottom: 30px;
   padding: 73px 30px;
   font-size: 27px;
@@ -18,7 +21,7 @@
 @media (min-width: 768px) {
   .catalog-main {
     border-top: 1px solid rgba(68, 68, 68, 0.1);
-    margin-top: -70px;
+    margin-top: -65px;
   }
 
   .catalog-main__wrapper {
@@ -28,11 +31,12 @@
 
   .catalog-main__header {
     @include tablet-padding;
+    @include zigzag-fill;
     width: 668px;
     margin: 0;
-    margin-bottom: 85px;
-    position: relative;
-    padding-top: 95px;
+    margin-bottom: 70px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -55,13 +59,16 @@
     margin-bottom: 115px;
     margin-left: -50px;
     margin-right: -50px;
-    padding-bottom: 85px;
+    padding-bottom: 120px;
+    padding-top: 95px;
     width: auto;
     font-size: 53px;
     line-height: 57px;
-    border-bottom: 34px solid rgba(0, 0, 0, 1);
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-repeat: round;
-    border-image-slice: 40;
+
+    &::after {
+      height: 34px;
+      background-position-x: -1px;
+      bottom: 0;
+    }
   }
 }

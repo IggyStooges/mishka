@@ -1,11 +1,8 @@
 .week-item {
   @include main-padding;
+  @include zigzag-line;
   position: relative;
-  padding-bottom: 35px;
-  border-bottom: 6px solid rgba(0, 0, 0, 0.1);
-  border-image-source: url("../img/bg-zigzag-line.svg");
-  border-image-repeat: repeat;
-  border-image-slice: 30;
+  padding-bottom: 40px;
 }
 
 .week-item__name {
@@ -90,28 +87,13 @@
 @media (min-width: 768px) {
   .week-item {
     @include tablet-padding;
-    margin-top: -20px;
     padding-bottom: 70px;
-    border-top: 24px solid rgba(0, 0, 0, 1);
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-repeat: round;
-    border-image-slice: 40;
-
-    &::after {
-      content: "";
-      height: 16px;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-image: url("../img/bg-zigzag-line.svg");
-    }
   }
 
   .week-item__btn {
+    width: 292px;
     padding-left: 100px;
     padding-right: 100px;
-    width: 292px;
 
     &:hover {
       padding-left: 102px;
@@ -129,9 +111,9 @@
   }
 
   .week-item__name {
+    padding-top: 35px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 40px;
   }
 
   .week-item__head-container {
@@ -148,6 +130,11 @@
     position: static;
     width: 333px;
     height: 404px;
+    margin-left: auto;
+    margin-top: 5px;
+  }
+
+  .week-item picture {
     margin-left: auto;
   }
 
@@ -182,14 +169,13 @@
   }
 }
 
-
 @media (min-width: 1150px) {
   .week-item__wrap {
-    padding-top: 65px;
+    padding-top: 69px;
   }
 
   .week-item {
-    border-bottom-width: 24px;
+    padding-bottom: 94px;
   }
 
   .week-item__img {
