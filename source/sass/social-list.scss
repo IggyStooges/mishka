@@ -13,6 +13,8 @@
 }
 
 .social-list__link {
+  display: inline-block;
+
   &:hover,
   &:focus {
     .social-list__icon-path {
@@ -21,9 +23,13 @@
   }
 
   &:active {
-    .social-list__icon-path {
-      opacity: 0.3;
+    & span {
+      color: rgba (0, 0, 0, 0.3);
     }
+
+    position: relative;
+    /* for IE */
+    opacity: 0.3;
   }
 }
 

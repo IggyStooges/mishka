@@ -48,6 +48,7 @@
   }
 
   .page-footer__logo {
+
     &:hover,
     &:focus {
       & path {
@@ -56,7 +57,9 @@
     }
 
     &:active {
-      opacity: 0.3;
+      & path {
+        opacity: 0.3;
+      }
     }
   }
 }
