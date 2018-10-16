@@ -224,6 +224,10 @@
   line-height: 18px;
   cursor: pointer;
 
+  & ~ .form__label {
+    cursor: pointer;
+  }
+
   &--patronymic {
     margin-bottom: 5px;
   }
@@ -240,7 +244,7 @@
     & ~ .form__label {
       opacity: 1;
 
-      & path {
+      & svg {
         fill: #62d1ba;
       }
     }

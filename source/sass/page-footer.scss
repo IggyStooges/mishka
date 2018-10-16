@@ -48,16 +48,15 @@
   }
 
   .page-footer__logo {
-
     &:hover,
     &:focus {
-      & path {
+      & svg {
         fill: #46c1ae;
       }
     }
 
     &:active {
-      & path {
+      & svg {
         opacity: 0.3;
       }
     }

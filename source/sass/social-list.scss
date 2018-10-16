@@ -17,18 +17,12 @@
 
   &:hover,
   &:focus {
-    .social-list__icon-path {
+    & svg {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    & span {
-      color: rgba (0, 0, 0, 0.3);
-    }
-
-    position: relative;
-    /* for IE */
     opacity: 0.3;
   }
 }

@@ -95,7 +95,7 @@
   &:focus {
     opacity: 1;
 
-    & path {
+    & svg {
       fill: #63d1bb;
     }
   }
@@ -195,7 +195,7 @@
 
 
     &--toys {
-      margin-top: 15px;
+      margin-top: 17px;
     }
   }
 

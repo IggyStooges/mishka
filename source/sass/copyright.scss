@@ -22,9 +22,13 @@
     align-self: center;
   }
 
+  & svg {
+    fill: #63d1bb;
+  }
+
   &:hover,
   &:focus {
-    .copyright__icon-path {
+    & svg {
       fill: #46c1ae;
     }
   }
