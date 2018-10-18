@@ -5,6 +5,12 @@
   border-bottom: 1px solid #ececec;
 }
 
+.search-form__search-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
+}
+
 .search-form__search {
   order: 2;
   padding-top: 27px;
@@ -22,9 +28,8 @@
   &:hover,
   &:focus {
     & ~ .search-form__search-label {
-      opacity: 1;
-
-      & path {
+      & svg {
+        opacity: 1;
         fill: #63d1bb;
       }
     }
@@ -33,7 +38,9 @@
   &:active,
   &:focus {
     & ~ .search-form__search-label {
-      opacity: 0.3;
+      & svg {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -61,14 +68,11 @@
 }
 
 .search-form__search-label {
+  cursor: pointer;
   order: 1;
   width: 18px;
   height: 18px;
   padding: 30px;
-
-  & path {
-    opacity: 0.2;
-  }
 }
 
 @media (min-width: 768px) {

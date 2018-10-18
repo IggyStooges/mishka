@@ -13,17 +13,17 @@
 }
 
 .social-list__link {
+  display: inline-block;
+
   &:hover,
   &:focus {
-    .social-list__icon-path {
+    & svg {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    .social-list__icon-path {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }
 
