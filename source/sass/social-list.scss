@@ -13,7 +13,6 @@
 }
 
 .social-list__link {
-  display: inline-block;
 
   &:hover,
   &:focus {
@@ -31,7 +30,7 @@
   .social-list {
     width: 145px;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 17px;
     margin-left: 158px;
     border: none;
   }
