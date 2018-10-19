@@ -19,10 +19,10 @@
   box-sizing: border-box;
   padding-bottom: 45px;
   padding-top: 45px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 170;
   border-top: 1px solid #c7c7c7;
   border: 1px solid #c7c7c7;
@@ -62,12 +62,25 @@
   width: 82px;
   height: 52px;
   padding: 16px 32px;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
 }
 
 .modal-window__radio {
+  &:focus {
+    & ~ .modal-window__label {
+      border: 2px solid rgba(68, 68, 68, 0.3);
+    }
+  }
+
   &:checked {
     & ~ .modal-window__label {
       border: 2px solid #63d1bb;
@@ -77,12 +90,14 @@
 
 .modal-window__btn {
   @include button-reset;
+  cursor: pointer;
   width: 260px;
   padding: 18px 80px;
   background-color: #63d1bb;
   border: none;
   font-size: 17px;
   line-height: 16px;
+  font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -109,7 +124,7 @@
     box-sizing: border-box;
     width: 112px;
     height: 52px;
-    padding: 16px 50px;
+    padding: 16px 47px;
     border: 2px solid #ececec;
     font-size: 17px;
     line-height: 16px;

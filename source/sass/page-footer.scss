@@ -26,6 +26,7 @@
 
   .page-footer__wrapper {
     @include tablet-padding;
+    padding-bottom: 45px;
     box-sizing: border-box;
     width: 768px;
     display: flex;
