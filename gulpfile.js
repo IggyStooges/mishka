@@ -52,6 +52,7 @@ gulp.task("compress", function () {
     .pipe(minify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -102,6 +103,7 @@ gulp.task("server", function () {
     ui: false
   });
 
+  gulp.watch("source/js/**/*.js", gulp.series("compress"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/*.svg", gulp.series("sprite", "html"));
   gulp.watch("source/*.html", gulp.series("html"));

@@ -6,6 +6,20 @@
   padding-bottom: 40px;
 }
 
+.contacts__map picture {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.contacts__map iframe {
+  width: 322px;
+  height: 457px;
+  position: relative;
+  z-index: 2;
+}
+
 .contacts__header {
   margin: 0;
   margin-bottom: 27px;
@@ -110,6 +124,11 @@
     width: 668px;
   }
 
+  .contacts__map iframe {
+    width: 768px;
+    height: 457px;
+  }
+
   .contacts__header {
     margin-bottom: 50px;
     font-size: 43px;
@@ -180,9 +199,15 @@
     }
   }
 
+  .contacts__map iframe {
+    width: 525px;
+    height: 457px;
+  }
+
   .contacts__map {
-    position: static;
+    position: relative;
     margin-left: auto;
+    top: 0;
     bottom: 130px;
     width: 525px;
     height: 457px;
