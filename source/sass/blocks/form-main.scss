@@ -2,15 +2,13 @@
   display: block;
 }
 
-.form-main__wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .form-main__header {
-  width: 260px;
-  padding: 73px 30px;
-  margin: 0;
+  @include main-padding;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-bottom: 76px;
+  margin: 0 auto;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -19,8 +17,9 @@
 
 .form-main__description {
   @include main-padding;
-  width: 260px;
-  padding-top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 21px;
   margin: 0;
   font-size: 13px;
   line-height: 24px;
@@ -41,7 +40,7 @@
     @include zigzag-fill;
     @include tablet-padding;
     position: relative;
-    width: 668px;
+    width: 768px;
     padding-top: 95px;
     margin-bottom: 45px;
     padding-bottom: 90px;
@@ -51,8 +50,8 @@
 
   .form-main__description {
     @include tablet-padding;
-    width: 668px;
-    margin: 0;
+    margin: 0 auto;
+    width: 768px;
     padding-top: 20px;
     font-size: 17px;
     line-height: 30px;
@@ -65,20 +64,16 @@
     margin-top: -47px;
   }
 
-  .form-main__wrapper {
-    width: 1150px;
-  }
-
   .form-main__description {
+    padding: 0;
     padding-top: 15px;
     width: 700px;
-    padding-left: 225px;
   }
 
   .form-main__header {
     @include tablet-padding;
     margin-bottom: 90px;
-    width: 1050px;
+    width: 100%;
     padding-bottom: 120px;
     font-size: 53px;
     line-height: 57px;

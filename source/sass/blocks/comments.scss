@@ -1,7 +1,7 @@
 .comments {
   @include main-padding;
   @include zigzag-line;
-  padding-bottom: 52px;
+  padding-bottom: 51px;
   padding-top: 33px;
 }
 
@@ -23,7 +23,7 @@
 
 .comments__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 15px;
   line-height: 30px;
 
@@ -44,7 +44,7 @@
 .comments__slider-toggles {
   display: flex;
   margin-top: 28px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .comments__button {

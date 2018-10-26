@@ -94,7 +94,7 @@
     }
 
     & svg {
-      fill: #63d1bb;
+      fill: $light-green;
     }
   }
 
@@ -200,7 +200,7 @@
 
 @media (min-width: 1150px) {
   .page-header__wrapper {
-    width: 1150px;
+    width: 1250px;
     margin: 0 auto;
     display: flex;
   }
@@ -223,6 +223,7 @@
   }
 
   .page-header__basket {
+    padding-top: 30px;
     order: 3;
   }
 
@@ -241,7 +242,7 @@
 
   .page-header__top-wrap {
     padding: 0;
-    left: 500px;
+    left: 550px;
     top: 9px;
   }
 }

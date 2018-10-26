@@ -85,7 +85,7 @@
   position: absolute;
   left: 5px;
   top: 5px;
-  fill: #63d1bb;
+  fill: $light-green;
 }
 
 @media (min-width: 768px) {
@@ -154,8 +154,10 @@
 
 @media (min-width: 1150px) {
   .manufacturing {
-    width: 1048px;
+    width: 1050px;
+    margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
     margin-top: 55px;
     margin-bottom: 105px;
     justify-content: flex-start;
@@ -204,14 +206,14 @@
 
   .manufacturing__order-btn {
     width: 230px;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin: 0;
 
     &:hover,
     &:focus {
-      padding-left: 44px;
-      padding-right: 44px;
+      padding-left: 42px;
+      padding-right: 42px;
     }
   }
 

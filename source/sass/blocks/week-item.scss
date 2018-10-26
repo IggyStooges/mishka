@@ -20,7 +20,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
-  color: #63d1bb;
+  color: $light-green;
   text-transform: uppercase;
 }
 
@@ -175,6 +175,9 @@
   }
 
   .week-item {
+    padding-left: 0;
+    padding-right: 100px;
+    margin-left: 50px;
     padding-bottom: 94px;
   }
 
@@ -225,3 +228,4 @@
     margin-bottom: 35px;
   }
 }
+

@@ -83,7 +83,7 @@
 
   &:checked {
     & ~ .modal-window__label {
-      border: 2px solid #63d1bb;
+      border: 2px solid $light-green;
     }
   }
 }
@@ -93,7 +93,7 @@
   cursor: pointer;
   width: 260px;
   padding: 18px 80px;
-  background-color: #63d1bb;
+  background-color: $light-green;
   border: none;
   font-size: 17px;
   line-height: 16px;

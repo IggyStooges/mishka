@@ -96,7 +96,7 @@
     opacity: 1;
 
     & svg {
-      fill: #63d1bb;
+      fill: $light-green;
     }
   }
 
@@ -162,6 +162,13 @@
 
 
 @media (min-width: 1150px) {
+  .catalog {
+    @include tablet-padding;
+    width: 1150px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
   .catalog__list {
     display: flex;
     padding: 0;

@@ -38,11 +38,20 @@
   }
 }
 
+.about-us__item--materials svg {
+  left: 8px;
+  top: 8px;
+}
+
+.about-us__item--style svg {
+  left: 0;
+}
+
 .about-us__item-img {
   position: absolute;
   top: 11px;
   left: 6px;
-  fill: #63d1bb;
+  fill: $light-green;
 
   &--rocket {
     left: -3px;

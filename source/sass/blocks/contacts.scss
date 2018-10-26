@@ -14,7 +14,7 @@
 }
 
 .contacts__map iframe {
-  width: 322px;
+  width: 320px;
   height: 457px;
   position: relative;
   z-index: 2;
@@ -44,24 +44,25 @@
 .contacts__email {
   @include link-reset;
   margin-left: auto;
+  width: 185px;
   position: relative;
   display: inline-block;
 
   &::after {
     content: "";
-    width: 100%;
+    width: 177px;
     height: 1px;
     position: absolute;
-    top: 25px;
-    left: 0;
+    top: 27px;
+    left: 2px;
     background-color: #62d1ba;
   }
 
   &:hover {
-    color: #46c1ae;
+    color: $dark-green;
 
     &::after {
-      background-color: #46c1ae;
+      background-color: $dark-green;
     }
   }
 
@@ -76,8 +77,8 @@
 }
 
 .contacts__adress {
-  margin-left: 35px;
-  width: 150px;
+  margin-left: auto;
+  width: 185px;
   text-align: left;
 }
 

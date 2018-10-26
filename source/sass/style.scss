@@ -1,58 +1,24 @@
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/opensans.woff2"),
-    url("../fonts/opensans.woff");
-}
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 800;
-  font-style: bold;
-  src: url("../fonts/opensansbold.woff2"),
-    url("../fonts/opensansbold.woff");
-}
-
-body {
-  position: relative;
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: "OpenSans", "Arial", sans-serif;
-  background-color: #ffffff;
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-}
-
+@import "normalize.scss";
+@import "fonts.scss";
+@import "global.scss";
 @import "mixin.scss";
-@import "header.scss";
-@import "main-nav.scss";
-@import "navigation-list.scss";
-@import "search-form.scss";
-@import "page-main.scss";
-@import "items.scss";
-@import "week-item.scss";
-@import "about-us.scss";
-@import "comments.scss";
-@import "contacts.scss";
-@import "page-footer.scss";
-@import "social-list.scss";
-@import "copyright.scss";
-@import "modal-window.scss";
-@import "catalog-main.scss";
-@import "catalog.scss";
-@import "manufacturing.scss";
-@import "form-main.scss";
-@import "form.scss";
-@import "normalize.scss"
+@import "variables.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/navigation-list.scss";
+@import "../sass/blocks/search-form.scss";
+@import "../sass/blocks/page-main.scss";
+@import "../sass/blocks/items.scss";
+@import "../sass/blocks/week-item.scss";
+@import "../sass/blocks/about-us.scss";
+@import "../sass/blocks/comments.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/social-list.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/modal-window.scss";
+@import "../sass/blocks/catalog-main.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/manufacturing.scss";
+@import "../sass/blocks/form-main.scss";
+@import "../sass/blocks/form.scss";

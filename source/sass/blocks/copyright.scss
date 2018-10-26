@@ -1,12 +1,8 @@
 .copyright {
   padding-left: 38px;
   padding-right: 38px;
-  padding-top: 20px;
+  padding-top: 23px;
   padding-bottom: 25px;
-}
-
-.copyright__icon-path {
-  fill: #63d1bb;
 }
 
 .copyright__link {
@@ -15,6 +11,7 @@
   width: 100%;
   font-size: 19px;
   justify-content: space-between;
+  align-items: center;
   line-height: 18px;
   font-weight: bold;
 
@@ -23,13 +20,13 @@
   }
 
   & svg {
-    fill: #63d1bb;
+    fill: $light-green;
   }
 
   &:hover,
   &:focus {
     & svg {
-      fill: #46c1ae;
+      fill: $dark-green;
     }
   }
 

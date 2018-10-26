@@ -14,7 +14,6 @@
   margin: 0 auto;
 }
 
-
 @media (min-width: 768px) {
   .page-footer {
     padding-top: 40px;
@@ -37,22 +36,26 @@
 
 @media (min-width: 1150px) {
   .page-footer {
+    width: 100%;
+    margin: 0;
     padding-top: 50px;
   }
 
   .page-footer__wrapper {
     box-sizing: border-box;
     width: 1150px;
+    margin: 0 auto;
     padding-bottom: 55px;
     justify-content: space-between;
     align-items: baseline;
   }
 
   .page-footer__logo {
+
     &:hover,
     &:focus {
       & svg {
-        fill: #46c1ae;
+        fill: $dark-green;
       }
     }
 
