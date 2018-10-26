@@ -106,12 +106,12 @@
   .contacts {
     position: relative;
     padding: 0;
-    padding-top: 55px;
+    padding-top: 56px;
 
     &::before {
       position: absolute;
-      right: 51px;
-      top: 44px;
+      right: 53px;
+      top: 41px;
       content: "";
       width: 47px;
       height: 81px;
@@ -132,18 +132,19 @@
 
   .contacts__header {
     margin-bottom: 50px;
+    margin-left: 0;
+    padding-left: 0;
     font-size: 43px;
     line-height: 50px;
   }
 
   .contacts__map {
-    bottom: 105px;
+    bottom: 107px;
     width: 768px;
     height: 457px;
     background-image: url("../img/map-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
-
 
   .contacts__img {
     width: 768px;
@@ -155,7 +156,7 @@
     padding-left: 40px;
     padding-right: 35px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 
     &:hover {
       padding-left: 42px;
@@ -168,7 +169,7 @@
     display: flex;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 535px;
+    margin-bottom: 537px;
   }
 
   .contacts__item {
@@ -196,7 +197,7 @@
 
     &::before {
       left: 113px;
-      top: 135px;
+      top: 130px;
     }
   }
 
@@ -230,7 +231,7 @@
   }
 
   .contacts__header {
-    margin-bottom: 45px;
+    margin-bottom: 47px;
     font-size: 53px;
     line-height: 57px;
   }

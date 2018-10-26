@@ -1,6 +1,6 @@
 .form {
   width: 320px;
-  padding-bottom: 45px;
+  padding-bottom: 56px;
 }
 
 .form__fieldset {
@@ -20,11 +20,16 @@
 
   &--textarea {
     padding-top: 15px;
+    padding-bottom: 0;
   }
 }
 
 .form__wrap {
   position: relative;
+
+  &--for-user {
+    @include main-padding;
+  }
 }
 
 .form__title {
@@ -335,6 +340,7 @@
   .form {
     width: 100%;
     padding: 0;
+    padding-bottom: 50px;
   }
 
   .form__checkbox {
@@ -364,19 +370,18 @@
     width: 500px;
     padding-bottom: 32px;
 
-    &:nth-child(2) {
+    &--color {
+      padding-top: 48px;
+      padding-bottom: 26px;
+    }
+
+    &--name {
       padding-top: 50px;
       padding-bottom: 26px;
     }
 
-    &:nth-child(3) {
-      padding-top: 50px;
-      padding-bottom: 26px;
-    }
-
-    &:last-child {
-      padding-top: 54px;
-      padding-bottom: 48px;
+    &--textarea {
+      padding-top: 51px;
     }
 
     &--gray {
@@ -384,6 +389,7 @@
     }
 
     &--contact {
+      padding-top: 50px;
       padding-bottom: 10px;
     }
 
@@ -398,6 +404,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 668px;
+
+    &--for-user {
+      margin: 0 auto;
+      display: flex;
+    }
   }
 
   .form__item {
@@ -446,7 +457,7 @@
 
   .form__footnote {
     order: 5;
-    margin-top: 60px;
+    margin-top: 20px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -483,12 +494,13 @@
       width: 32px;
       height: 21px;
       right: 23px;
-      bottom: 17px;
+      bottom: 20px;
     }
 
     &--name,
     &--surname,
     &--patronymic {
+      margin-bottom: 24px;
       padding-left: 0;
     }
 
@@ -561,7 +573,7 @@
     width: 230px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 50px;
+    margin-top: 12px;
 
     &:hover,
     &:focus {

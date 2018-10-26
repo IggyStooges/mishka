@@ -61,7 +61,7 @@
 
 @media (min-width: 1150px) {
   .form-main {
-    margin-top: -47px;
+    margin-top: -42px;
   }
 
   .form-main__description {
@@ -81,7 +81,7 @@
     &::after {
       bottom: 0;
       height: 34px;
-      background-position-x: 0;
+      background-position-x: -15px;
     }
   }
 }

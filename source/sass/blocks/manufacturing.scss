@@ -147,19 +147,19 @@
 
   .manufacturing__icon {
     left: 40px;
-    top: 0;
+    top: -8px;
   }
 }
 
 
 @media (min-width: 1150px) {
   .manufacturing {
-    width: 1050px;
+    @include tablet-padding;
+    width: 1150px;
     margin: 0 auto;
-    padding: 0;
     box-sizing: border-box;
-    margin-top: 55px;
-    margin-bottom: 105px;
+    margin-top: 57px;
+    margin-bottom: 50px;
     justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
@@ -171,7 +171,7 @@
     order: 1;
     padding: 0;
     margin: 0;
-    margin-bottom: 43px;
+    margin-bottom: 47px;
     width: 225px;
     font-size: 15px;
     line-height: 30px;
@@ -200,15 +200,16 @@
     width: 150px;
     padding: 0;
     margin-top: 95px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 20px;
   }
 
   .manufacturing__order-btn {
     width: 230px;
-    padding-left: 40px;
+    padding-left: 41px;
     padding-right: 40px;
     margin: 0;
+    margin-left: 3px;
 
     &:hover,
     &:focus {
@@ -219,6 +220,6 @@
 
   .manufacturing__icon {
     top: -55px;
-    left: 0;
+    left: 3px;
   }
 }

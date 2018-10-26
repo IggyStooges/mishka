@@ -20,7 +20,7 @@
 @media (min-width: 768px) {
   .catalog-main {
     border-top: 1px solid rgba(68, 68, 68, 0.1);
-    margin-top: -65px;
+    margin-top: -69px;
   }
 
   .catalog-main__wrapper {
@@ -31,10 +31,10 @@
   .catalog-main__header {
     @include tablet-padding;
     @include zigzag-fill;
-    width: 1150px;
+    width: 768px;
     margin: 0 auto;
     margin-bottom: 70px;
-    padding-top: 90px;
+    padding-top: 95px;
     padding-bottom: 90px;
     font-size: 43px;
     line-height: 50px;
@@ -44,7 +44,7 @@
 
 @media (min-width: 1150px) {
   .catalog-main {
-    margin-top: -47px;
+    margin-top: -42px;
   }
 
   .catalog-main__wrapper {
@@ -55,8 +55,8 @@
 
   .catalog-main__header {
     margin: 0;
-    margin-bottom: 115px;
-    padding-bottom: 120px;
+    margin-bottom: 112px;
+    padding-bottom: 118px;
     padding-top: 95px;
     width: 100%;
     box-sizing: border-box;
@@ -65,7 +65,7 @@
 
     &::after {
       height: 34px;
-      background-position-x: -1px;
+      background-position-x: -15px;
       bottom: 0;
     }
   }

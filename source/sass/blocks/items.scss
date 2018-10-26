@@ -87,11 +87,21 @@
   }
 
   .items__link-btn {
-    padding-top: 30px;
+    padding-top: 28px;
     font-size: 20px;
     line-height: 30px;
     padding-right: 189px;
     padding-left: 35px;
+
+    &::before {
+      top: 30px;
+    }
+
+    &--toys {
+      &::before {
+        right: 35px;
+      }
+    }
   }
 }
 
