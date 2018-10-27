@@ -29,9 +29,7 @@
   background-image: url("../img/icon-menu-open.svg");
 
   &--nojs {
-    width: 21px;
-    height: 20px;
-    background-image: url("../img/icon-menu-close.svg");
+    display: none;
   }
 
   &--close {
@@ -200,9 +198,10 @@
 
 @media (min-width: 1150px) {
   .page-header__wrapper {
-    width: 1250px;
+    width: 1150px;
     margin: 0 auto;
     display: flex;
+    box-sizing: border-box;
   }
 
   .page-header__container {
@@ -242,7 +241,7 @@
 
   .page-header__top-wrap {
     padding: 0;
-    left: 550px;
+    left: 500px;
     top: 9px;
   }
 }

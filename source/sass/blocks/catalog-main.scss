@@ -7,7 +7,6 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  margin: 0;
   margin-bottom: 30px;
   padding-top: 70px;
   padding-bottom: 76px;
@@ -19,7 +18,6 @@
 
 @media (min-width: 768px) {
   .catalog-main {
-    border-top: 1px solid rgba(68, 68, 68, 0.1);
     margin-top: -69px;
   }
 
@@ -36,6 +34,7 @@
     margin-bottom: 70px;
     padding-top: 95px;
     padding-bottom: 90px;
+    border-top: 1px solid rgba(68, 68, 68, 0.1);
     font-size: 43px;
     line-height: 50px;
   }
@@ -65,7 +64,7 @@
 
     &::after {
       height: 34px;
-      background-position-x: -15px;
+      background-position-x: 0;
       bottom: 0;
     }
   }

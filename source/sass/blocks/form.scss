@@ -29,6 +29,7 @@
 
   &--for-user {
     @include main-padding;
+    margin-top: 8px;
   }
 }
 
@@ -94,7 +95,7 @@
 .form__label {
   position: relative;
   display: inline-block;
-  width: 200px;
+  width: auto;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -163,7 +164,7 @@
 
 .form__radio {
   &:checked {
-    &~.form__label {
+    & ~ .form__label {
       &--radio {
         &::after {
           content: "";
@@ -184,7 +185,7 @@
 
   &:hover,
   &:focus {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: #62d1ba;
       }
@@ -193,7 +194,7 @@
 
 
   &:disabled {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: rgba(0, 0, 0, 0.3);
       }
@@ -203,7 +204,7 @@
 
 .form__checkbox {
   &:checked {
-    &~.form__label {
+    & ~ .form__label {
       &::after {
         content: "";
         display: block;
@@ -222,7 +223,7 @@
 
   &:hover,
   &:focus {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: #62d1ba;
       }
@@ -230,7 +231,7 @@
   }
 
   &:disabled {
-    &~.form__label {
+    & ~ .form__label {
       &::before {
         border-color: rgba(0, 0, 0, 0.3);
       }
@@ -252,7 +253,7 @@
   line-height: 18px;
   cursor: pointer;
 
-  &~.form__label {
+  & ~ .form__label {
     cursor: pointer;
   }
 
@@ -269,7 +270,7 @@
   &:active {
     border-color: #62d1ba;
 
-    &~.form__label {
+    & ~ .form__label {
       opacity: 1;
 
       & svg {
@@ -283,7 +284,7 @@
     opacity: 1;
     color: #444444;
 
-    &~.form__label {
+    & ~ .form__label {
       & path {
         fill: #62d1ba;
       }
@@ -297,12 +298,12 @@
   padding-left: 15px;
   padding-bottom: 19px;
   padding-right: 56px;
-  margin-bottom: 5px;
   border: 2px solid black;
   border-radius: 0;
   font-size: 17px;
   line-height: 18px;
   cursor: pointer;
+  resize: none;
 
   &:hover {
     border-color: #62d1ba;
@@ -345,7 +346,7 @@
 
   .form__checkbox {
     &:checked {
-      &~.form__label {
+      & ~ .form__label {
         &::after {
           content: "";
           display: block;
@@ -382,6 +383,7 @@
 
     &--textarea {
       padding-top: 51px;
+      padding-bottom: 37px;
     }
 
     &--gray {
@@ -453,6 +455,7 @@
   .form__textarea {
     max-width: 426px;
     width: 426px;
+    font-size: 19px;
   }
 
   .form__footnote {
@@ -533,7 +536,7 @@
 
   .form__radio {
     &:checked {
-      &~.form__label {
+      & ~ .form__label {
         &--radio {
           &::after {
             left: 15px;
@@ -585,10 +588,15 @@
 
 @media (min-width: 1150px) {
   .form__item-list {
-    margin-left: 40px;
+    margin-left: 50px;
 
     &--checkbox {
       width: 750px;
+      margin-left: 44px;
+    }
+
+    &--name {
+      margin-left: 44px;
     }
   }
 
@@ -621,10 +629,21 @@
 
     &--contact {
       padding-top: 50px;
+      padding-bottom: 12px;
     }
 
     &--email {
       padding-top: 15px;
+      padding-bottom: 50px;
+    }
+
+    &--name {
+      padding-bottom: 22px;
+    }
+
+    &--textarea {
+      padding-top: 49px;
+      padding-bottom: 5px;
     }
   }
 
@@ -667,7 +686,7 @@
 
     &--contact {
       width: 700px;
-      margin-left: 50px;
+      margin-left: 55px;
     }
 
     &--email {
@@ -677,13 +696,13 @@
 
   .form__label {
     &--telephone {
-      right: 185px;
-      bottom: 20px;
+      right: 232px;
+      bottom: 16px;
     }
 
     &--email {
-      right: 180px;
-      bottom: 23px;
+      right: 229px;
+      bottom: 22px;
     }
 
     &--name,
@@ -698,11 +717,10 @@
     min-width: 699px;
     height: 143px;
     box-sizing: border-box;
-    margin-left: 40px;
+    margin-left: 47px;
   }
 
   .form__title {
-
     &--email,
     &--telephone {
       padding-right: 27px;
@@ -710,11 +728,17 @@
   }
 
   .form__submit-btn {
-    margin-left: 110px;
-    margin-top: 47px;
+    margin-top: 43px;
   }
 
   .form__footnote {
     margin-left: auto;
+    margin-top: 52px;
+  }
+
+
+  .form__wrap--for-user {
+    padding-right: 225px;
+    padding-left: 225px;
   }
 }

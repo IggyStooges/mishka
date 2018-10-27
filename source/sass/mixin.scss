@@ -25,7 +25,6 @@
 }
 
 @mixin styleguide-btn {
-
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -64,7 +63,6 @@
 }
 
 @mixin link-text {
-
   &:hover,
   &:focus {
     color: rgba(0, 0, 0, 0.6);
@@ -116,7 +114,7 @@
 
 
     @media (min-width: 768px) {
-      width: 772px;
+      width: 768px;
       bottom: 5px;
       background-size: 768px 100%;
       background-position-x: 20px;
