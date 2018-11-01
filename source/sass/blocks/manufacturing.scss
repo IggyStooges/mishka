@@ -1,6 +1,9 @@
 .manufacturing {
   @include main-padding;
+  margin: 0 auto;
   position: relative;
+  width: 320px;
+  box-sizing: border-box;
   margin-top: 30px;
   padding-bottom: 58px;
 }
@@ -91,6 +94,8 @@
 @media (min-width: 768px) {
   .manufacturing {
     @include tablet-padding;
+    width: 768px;
+    box-sizing: border-box;
     padding-bottom: 53px;
     padding-top: 0;
     display: flex;
@@ -143,6 +148,12 @@
     margin: 0 40px;
     padding-left: 220px;
     order: 1;
+
+    &:hover,
+    &:focus {
+      padding-left: 222px;
+      padding-right: 222px;
+    }
   }
 
   .manufacturing__icon {
