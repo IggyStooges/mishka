@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   padding-left: 57px;
   padding-right: 60px;
   border-bottom: 1px solid #e5e5e5;
@@ -15,7 +15,7 @@
 .social-list__link {
   &:hover,
   &:focus {
-    & svg {
+    svg {
       fill: $dark-green;
     }
   }
