@@ -165,7 +165,9 @@
   }
 }
 
-.form__radio:checked ~ .form__label {
+.form__radio {
+  &:checked {
+    ~ .form__label {
       &--radio {
         &::after {
           content: "";
@@ -180,24 +182,30 @@
           background-color: #62d1ba;
         }
       }
-}
+    }
+  }
 
-
-.form__radio:hover ~ .form__label,
-.form__radio:focus ~ .form__label {
+  &:hover,
+  &:focus {
+    ~ .form__label {
       &::before {
         border-color: #62d1ba;
       }
     }
+  }
 
-
-.form__radio:disabled  ~ .form__label {
+  &:disabled {
+    ~ .form__label {
       &::before {
         border-color: rgba(0, 0, 0, 0.3);
       }
     }
+  }
+}
 
-.form__checkbox:checked ~ .form__label {
+.form__checkbox {
+  &:checked {
+    ~ .form__label {
       &::after {
         content: "";
         display: block;
@@ -212,20 +220,29 @@
         transform: rotate(-45deg);
       }
     }
-  
+  }
 
-.form__checkbox:hover ~ .form__label,
-.form__checkbox:focus ~ .form__label {
+  &:hover,
+  &:focus {
+    ~ .form__label {
       &::before {
         border-color: #62d1ba;
       }
     }
+  }
 
- .form__checkbox &:disabled ~ .form__label {
+  &:disabled {
+    ~ .form__label {
       &::before {
         border-color: rgba(0, 0, 0, 0.3);
       }
     }
+  }
+}
+
+.form__text-input ~ .form__label {
+  cursor: pointer;
+}
 
 .form__text-input {
   width: 260px;
@@ -253,7 +270,7 @@
   &:active {
     border-color: #62d1ba;
 
-    & ~ .form__label {
+    ~ .form__label {
       opacity: 1;
 
       & svg {
@@ -267,16 +284,12 @@
     opacity: 1;
     color: #444444;
 
-    & ~ .form__label {
+    ~ .form__label {
       & path {
         fill: #62d1ba;
       }
     }
   }
-}
-
-.form__text-input ~ .form__label {
-    cursor: pointer;
 }
 
 .form__textarea {
@@ -333,7 +346,7 @@
 
   .form__checkbox {
     &:checked {
-      & ~ .form__label {
+      ~ .form__label {
         &::after {
           content: "";
           display: block;
@@ -523,7 +536,7 @@
 
   .form__radio {
     &:checked {
-      & ~ .form__label {
+      ~ .form__label {
         &--radio {
           &::after {
             left: 15px;
@@ -556,6 +569,7 @@
 
     &--contact {
       width: 501px;
+      margin-left: auto;
     }
   }
 

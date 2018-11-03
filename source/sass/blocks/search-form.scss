@@ -27,7 +27,7 @@
 
   &:hover,
   &:focus {
-    & ~ .search-form__search-label {
+    ~ .search-form__search-label {
       & svg {
         opacity: 1;
         fill: $light-green;
@@ -37,7 +37,7 @@
 
   &:active,
   &:focus {
-    & ~ .search-form__search-label {
+    ~ .search-form__search-label {
       & svg {
         opacity: 0.3;
       }
@@ -78,9 +78,10 @@
 @media (min-width: 768px) {
   .search-form {
     width: 82px;
+    order: 1;
     box-sizing: border-box;
     border: none;
-    margin-left: 320px;
+    margin-left: auto;
   }
 
   .search-form__search-label {
@@ -101,7 +102,7 @@
 
 @media (min-width: 1150px) {
   .search-form {
-    order: 2;
-    margin-left: 322px;
+    order: 3;
+    margin-left: auto;
   }
 }

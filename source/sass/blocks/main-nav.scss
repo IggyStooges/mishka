@@ -1,11 +1,28 @@
+.main-nav {
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
   .main-nav {
-    order: 2;
+    display: block;
+    width: 334px;
+    order: 3;
   }
 }
 
 @media (min-width: 1150px) {
   .main-nav {
+    width: 379px;
     order: 0;
   }
 }

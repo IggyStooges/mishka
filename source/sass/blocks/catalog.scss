@@ -98,7 +98,7 @@
   &:focus {
     opacity: 1;
 
-    & svg {
+    svg {
       fill: $light-green;
     }
   }
@@ -186,7 +186,7 @@
     flex-direction: column;
     width: 315px;
     margin-right: 50px;
-    margin-bottom: 0;
+    margin-bottom: 17px;
 
     &:nth-child(3n) {
       margin-right: 0;

@@ -1,0 +1,74 @@
+@media (min-width: 320px) {
+  .offers-list__new,
+  .offers-list__sale {
+    @include link-text;
+  }
+
+
+  .offers-list__delivery,
+  .offers-list__sale,
+  .offers-list__new {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .offers-list {
+    width: 235px;
+    margin-left: auto;
+    order: 5;
+  }
+
+  .offers-list__delivery {
+    display: block;
+    align-self: flex-start;
+    order: 3;
+    width: 235px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #444444;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1150px) {
+  .offers-list__delivery {
+    padding-top: 18px;
+  }
+
+  .offers-list__sale,
+  .offers-list__new {
+    @include link-reset;
+    display: block;
+    width: 180px;
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+    order: 3;
+    font-size: 15px;
+  }
+
+  .offers-list {
+    padding-top: 0;
+    width: 1050px;
+  }
+
+  .offers-list li:nth-child(3n+1) {
+    width: 184px;
+    margin-right: 35px;
+  }
+
+  .offers-list li:nth-child(3n+2) {
+    width: 220px;
+    margin-right: 375px;
+  }
+
+  .offers-list li:nth-child(3n+3) {
+    width: 235px;
+    margin-right: 0;
+  }
+}

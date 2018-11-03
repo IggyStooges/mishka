@@ -52,13 +52,13 @@
   .page-footer__logo {
     &:hover,
     &:focus {
-      & svg {
+      svg {
         fill: $dark-green;
       }
     }
 
     &:active {
-      & svg {
+      svg {
         opacity: 0.3;
       }
     }

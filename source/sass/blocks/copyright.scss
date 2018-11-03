@@ -15,17 +15,17 @@
   line-height: 18px;
   font-weight: bold;
 
-  & span {
+  span {
     align-self: center;
   }
 
-  & svg {
+  svg {
     fill: $light-green;
   }
 
   &:hover,
   &:focus {
-    & svg {
+    svg {
       fill: $dark-green;
     }
   }

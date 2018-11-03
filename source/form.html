@@ -19,20 +19,20 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__top-wrap">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип мишка, ссылка на главную страницу">
-          </picture>
-        </a>
-        <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
-          Открыть меню
-        </button>
-      </div>
-      <div class="page-header__container page-header__container--nojs page-header__container--closed">
-        <nav class="main-nav">
+      <div class="page-header__container">
+        <div class="page-header__top-wrap">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип мишка - ссылка на главную страницу">
+            </picture>
+          </a>
+          <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
+            Открыть меню
+          </button>
+        </div>
+        <nav class="main-nav main-nav--nojs main-nav--closed">
           <ul class="main-nav__list navigation-list">
             <li class="navigation-list__item navigation-list__item--catalog">
               <a class="navigation-list__link" href="catalog.html">
@@ -46,32 +46,45 @@
             </li>
           </ul>
         </nav>
-        <form class="page-header__form search-form" method="POST" action="https://echo.htmlacademy.ru">
-          <input type="search" class="search-form__search" id="search" placeholder="Поиск по сайту">
-          <label for="search" class="search-form__search-label">
-            <svg class="search-form__search-icon" width="18" height="18">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-          </label>
-        </form>
-        <a class="page-header__basket" href="basket.html">
-          <svg class="page-header__basket-img" width="21" height="18">
-            <use xlink:href="#icon-cart"></use>
-          </svg>
-          Корзина: пока пуста
-        </a>
-        <a class="page-header__new" href="new-items.html">
-          Новые поступления
-        </a>
-        <a class="page-header__sale" href="sale.html">
-          Распродажа
-        </a>
-        <p class="page-header__delivery">
-          Бесплатная доставка по России
-        </p>
+        <ul class="page-header__user-menu user-menu user-menu--nojs user-menu--closed">
+          <li>
+            <form class="user-menu__form search-form" method="POST" action="https://echo.htmlacademy.ru">
+              <input type="search" class="search-form__search" id="search" placeholder="Поиск по сайту">
+              <label for="search" class="search-form__search-label">
+                <svg class="search-form__search-icon" width="18" height="18">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </label>
+            </form>
+          </li>
+          <li>
+            <a class="user-menu__basket" href="basket.html">
+              <svg class="user-menu__basket-img" width="21" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <ul class="page-header__offers-list offers-list">
+          <li>
+            <a class="offers-list__new" href="new-items.html">
+              Новые поступления
+            </a>
+          </li>
+          <li>
+            <a class="offers-list__sale" href="sale.html">
+              Распродажа
+            </a>
+          </li>
+          <li class="offers-list__delivery">
+            Бесплатная доставка по России
+          </li>
+        </ul>
       </div>
     </div>
   </header>
+
   <main class="form-main">
     <h1 class="form-main__header">
       Вязание на заказ
@@ -240,7 +253,7 @@
             <svg class="social-list__icon" width="22" height="21">
               <use xlink:href="#icon-insta"></use>
             </svg>
-            span class="visually-hidden">Мы в Инстаграмме</span>
+            <span class="visually-hidden">Мы в Инстаграмме</span>
           </a>
         </li>
         <li class="social-list__item">
@@ -248,7 +261,7 @@
             <svg class="social-list__icon" width="15" height="29">
               <use xlink:href="#icon-fb"></use>
             </svg>
-            span class="visually-hidden">Мы в Фейсбуке</span>
+            <span class="visually-hidden">Мы в Фейсбуке</span>
           </a>
         </li>
         <li class="social-list__item">

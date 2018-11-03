@@ -76,13 +76,13 @@
 
 .modal-window__radio {
   &:focus {
-    & ~ .modal-window__label {
+    ~ .modal-window__label {
       border: 2px solid rgba(68, 68, 68, 0.3);
     }
   }
 
   &:checked {
-    & ~ .modal-window__label {
+    ~ .modal-window__label {
       border: 2px solid $light-green;
     }
   }

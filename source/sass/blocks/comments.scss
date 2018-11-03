@@ -26,10 +26,10 @@
   margin-bottom: 27px;
   font-size: 15px;
   line-height: 30px;
+}
 
-  & br {
-    display: none;
-  }
+.comments__text br {
+  display: none;
 }
 
 .comments__author-link {
@@ -141,7 +141,7 @@
     font-size: 17px;
     line-height: 30px;
 
-    & br {
+    br {
       display: none;
     }
   }
@@ -204,7 +204,7 @@
     width: 775px;
     margin-bottom: 37px;
 
-    & br {
+    br {
       display: inline;
     }
   }

@@ -19,20 +19,20 @@
 
   <header class="page-header">
     <div class="page-header__wrapper">
-      <div class="page-header__top-wrap">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип мишка, ссылка на главную страницу">
-          </picture>
-        </a>
-        <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
-          Открыть меню
-        </button>
-      </div>
-      <div class="page-header__container page-header__container--nojs page-header__container--closed">
-        <nav class="main-nav">
+      <div class="page-header__container">
+        <div class="page-header__top-wrap">
+          <a class="page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип мишка - ссылка на главную страницу">
+            </picture>
+          </a>
+          <button type="button" class="page-header__open-menu-btn page-header__open-menu-btn--nojs">
+            Открыть меню
+          </button>
+        </div>
+        <nav class="main-nav main-nav--nojs main-nav--closed">
           <ul class="main-nav__list navigation-list">
             <li class="navigation-list__item navigation-list__item--catalog">
               <a class="navigation-list__link">
@@ -46,32 +46,45 @@
             </li>
           </ul>
         </nav>
-        <form class="page-header__form search-form" method="POST" action="https://echo.htmlacademy.ru">
-          <input type="search" class="search-form__search" id="search" placeholder="Поиск по сайту">
-          <label for="search" class="search-form__search-label">
-            <svg class="search-form__search-icon" width="18" height="18">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-          </label>
-        </form>
-        <a class="page-header__basket" href="basket.html">
-          <svg class="page-header__basket-img" width="21" height="18">
-            <use xlink:href="#icon-cart"></use>
-          </svg>
-          Корзина: пока пуста
-        </a>
-        <a class="page-header__new" href="new-items.html">
-          Новые поступления
-        </a>
-        <a class="page-header__sale" href="sale.html">
-          Распродажа
-        </a>
-        <p class="page-header__delivery">
-          Бесплатная доставка по России
-        </p>
+        <ul class="page-header__user-menu user-menu user-menu--nojs user-menu--closed">
+          <li>
+            <form class="user-menu__form search-form" method="POST" action="https://echo.htmlacademy.ru">
+              <input type="search" class="search-form__search" id="search" placeholder="Поиск по сайту">
+              <label for="search" class="search-form__search-label">
+                <svg class="search-form__search-icon" width="18" height="18">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </label>
+            </form>
+          </li>
+          <li>
+            <a class="user-menu__basket" href="basket.html">
+              <svg class="user-menu__basket-img" width="21" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <ul class="page-header__offers-list offers-list">
+          <li>
+            <a class="offers-list__new" href="new-items.html">
+              Новые поступления
+            </a>
+          </li>
+          <li>
+            <a class="offers-list__sale" href="sale.html">
+              Распродажа
+            </a>
+          </li>
+          <li class="offers-list__delivery">
+            Бесплатная доставка по России
+          </li>
+        </ul>
       </div>
     </div>
   </header>
+
   <main class="catalog-main">
     <h1 class="catalog-main__header">
       Каталог товаров
@@ -179,35 +192,37 @@
       </ul>
     </section>
     <section class="manufacturing">
-      <div class="manufacturing__video">
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+      <div class="manufacturing__container">
+        <div class="manufacturing__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
-          <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img class="manufacturing__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="процесс производства">
-        </picture>
-        <button type="button" class="manufacturing__play-btn">
-          <svg class="manufacturing__play-icon" width="100" height="76">
-            <use xlink:href="#icon-play"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="manufacturing__wrap">
-        <h2 class="manufacturing__header">
-          <svg class="manufacturing__icon" width="32" height="32">
-            <use xlink:href="#icon-video"></use>
-          </svg>
-          Процесс производства
-        </h2>
-        <p class="manufacturing__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-        <a class="manufacturing__order-btn" href="form.html">
-          сделать заказ
-        </a>
+            <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="manufacturing__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="процесс производства">
+          </picture>
+          <button type="button" class="manufacturing__play-btn">
+            <svg class="manufacturing__play-icon" width="100" height="76">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="manufacturing__wrap">
+          <h2 class="manufacturing__header">
+            <svg class="manufacturing__icon" width="32" height="32">
+              <use xlink:href="#icon-video"></use>
+            </svg>
+            Процесс производства
+          </h2>
+          <p class="manufacturing__description">
+            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="manufacturing__order-btn" href="form.html">
+            сделать заказ
+          </a>
+        </div>
       </div>
     </section>
   </main>

@@ -178,14 +178,15 @@
 
 @media (min-width: 1150px) {
   .week-item__wrap {
-    padding-top: 69px;
     padding-right: 50px;
+    padding-bottom: 10px;
   }
 
   .week-item {
     padding-left: 0;
     padding-right: 0;
     margin-left: 50px;
+    margin-top: 90px;
     padding-bottom: 91px;
   }
 
@@ -197,11 +198,10 @@
   }
 
   .week-item__head-container {
-    position: absolute;
+    position: relative;
     width: 700px;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    top: 90px;
   }
 
   .week-item__table {
@@ -210,21 +210,26 @@
   }
 
   .week-item__container {
-    padding-top: 55px;
-    padding-left: 172px;
+    padding-top: 0;
+    padding-left: 175px;
   }
 
   .week-item picture {
+    position: absolute;
+    top: -22px;
+    right: 50px;
+    z-index: -5;
     width: 525px;
   }
 
   .week-item__description {
     width: 290px;
-    padding-top: 105px;
+    padding-top: 0;
     padding-bottom: 50px;
   }
 
   .week-item__name {
+    width: 527px;
     font-size: 53px;
     line-height: 57px;
     padding-top: 35px;
